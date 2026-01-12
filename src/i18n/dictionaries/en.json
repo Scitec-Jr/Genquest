@@ -1,13 +1,38 @@
 {
-	"home": {
-		"title": "Olá mundo",
-		"description": "Site institucional profissional"
-	},
 	"header": {
-		"home": "Início",
-		"about": "Sobre"
+		"home": "Home",
+		"servicesAndPerformance": "Serviços e Atuação",
+        "portfolio": "Portfólio de soluções",
+        "performance": "Áreas de atuação",
+        "informations": "Nossas Informações",
+        "about": "Sobre Nós",
+        "articles": "Artigos e Notícias",
+        "patientsAndFamily": "Para Pacientes e Famílias",
+        "contact": "Contato"
 	},
 	"footer": {
-		"politicas": "Políticas"
+		"politcs": "Políticas",
+        "privacyPolicy": "Política de Privacidade",
+        "termsOfUse": "Termos de Uso",
+        "legalNotice": "Aviso Legal",
+        "compliance": "Compliance",
+        "codeOfConduct": "Código de Conduta",
+        "transparency": "Relatório de Transparência",
+        "complaint": "Denúncias",
+        "fastAccess": "Acesso Rápido",
+        "solutions": "Soluções e Serviços",
+        "access": "Jornada de Acesso",
+        "results": "Casos & Resultados"
+	},
+    "home": {
+		"slogan": "Humanizando de acesso a medicamentos",
+        "clientButton": "Quero ser cliente",
+        "partnerButton": "Quero ser parceiro",
+        "heroInovationTitle": "Inovação e excelência:",
+        "heroInovationText": "\"Atuamos como o elo de confiança entre a ciência e o acesso.\"",
+        "heroReceptionTitle": "Acolhimento e esperança:",
+        "heroReceptionText": "\"Entendemos sua jornada e lutamos por ela.\"",
+        "heroEthicTitle": "Ética e impacto:",
+        "heroEthicText": "\"Compromisso com a transparência e sustentabilidade.\""
 	}
 }

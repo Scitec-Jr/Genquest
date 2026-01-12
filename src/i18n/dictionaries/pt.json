@@ -1,8 +1,4 @@
 {
-	"home": {
-		"title": "Site genquest",
-		"description": "Site institucional profissional"
-	},
 	"header": {
 		"home": "Home",
 		"servicesAndPerformance": "Serviços e Atuação",
@@ -27,5 +23,16 @@
         "solutions": "Soluções e Serviços",
         "access": "Jornada de Acesso",
         "results": "Casos & Resultados"
+	},
+    "home": {
+		"slogan": "Humanizando de acesso a medicamentos",
+        "clientButton": "Quero ser cliente",
+        "partnerButton": "Quero ser parceiro",
+        "heroInovationTitle": "Inovação e excelência:",
+        "heroInovationText": "\"Atuamos como o elo de confiança entre a ciência e o acesso.\"",
+        "heroReceptionTitle": "Acolhimento e esperança:",
+        "heroReceptionText": "\"Entendemos sua jornada e lutamos por ela.\"",
+        "heroEthicTitle": "Ética e impacto:",
+        "heroEthicText": "\"Compromisso com a transparência e sustentabilidade.\""
 	}
 }

@@ -10,7 +10,7 @@ export default function Header({ locale, dict }: any) {
 	const [open, setOpen] = useState(false);
 
 	return (
-		<header className="relative py-2 px-4 md:px-8 lg:px-16 bg-(--main-color) text-(--inactive-color) text-sm">
+		<header className="relative py-2 px-4 md:px-8 lg:px-16 bg-(--main-color) text-(--inactive-color) text-sm z-50">
 			<nav className="flex items-center max-w-360 mx-auto">
 				<LocalizedLink locale={locale} href="/" className="mr-auto">
 					<Image src="/assets/global/logo.png" alt="Genquest" width={150} height={50} />
