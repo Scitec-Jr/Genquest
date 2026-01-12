@@ -1,0 +1,31 @@
+{
+	"home": {
+		"title": "Site genquest",
+		"description": "Site institucional profissional"
+	},
+	"header": {
+		"home": "Home",
+		"servicesAndPerformance": "Serviços e Atuação",
+        "portfolio": "Portfólio de soluções",
+        "performance": "Áreas de atuação",
+        "informations": "Nossas Informações",
+        "about": "Sobre Nós",
+        "articles": "Artigos e Notícias",
+        "patientsAndFamily": "Para Pacientes e Famílias",
+        "contact": "Contato"
+	},
+	"footer": {
+		"politcs": "Políticas",
+        "privacyPolicy": "Política de Privacidade",
+        "termsOfUse": "Termos de Uso",
+        "legalNotice": "Aviso Legal",
+        "compliance": "Compliance",
+        "codeOfConduct": "Código de Conduta",
+        "transparency": "Relatório de Transparência",
+        "complaint": "Denúncias",
+        "fastAccess": "Acesso Rápido",
+        "solutions": "Soluções e Serviços",
+        "access": "Jornada de Acesso",
+        "results": "Casos & Resultados"
+	}
+}

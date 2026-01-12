@@ -1,0 +1,13 @@
+{
+	"home": {
+		"title": "Olá mundo",
+		"description": "Site institucional profissional"
+	},
+	"header": {
+		"home": "Início",
+		"about": "Sobre"
+	},
+	"footer": {
+		"politicas": "Políticas"
+	}
+}
