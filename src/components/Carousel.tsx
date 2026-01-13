@@ -1,0 +1,63 @@
+"use client";
+
+import useEmblaCarousel from "embla-carousel-react";
+import { useEffect, useState } from "react";
+import Image from "next/image";
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function Carousel({ children, leftArrowSrc = "/assets/icons/carouselArrowLeft.png", rightArrowSrc = "/assets/icons/carouselArrowRight.png", showDots = true }: any) {
+	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+	const [selectedIndex, setSelectedIndex] = useState(0);
+
+	useEffect(() => {
+		if (!emblaApi) return;
+
+		const onSelect = () => {
+			setSelectedIndex(emblaApi.selectedScrollSnap());
+		};
+
+		emblaApi.on("select", onSelect);
+		onSelect();
+
+		return () => {
+			emblaApi.off("select", onSelect);
+		};
+	}, [emblaApi]);
+
+	const scrollSnaps = emblaApi?.scrollSnapList() ?? [];
+
+	return (
+		<div className="relative w-full">
+			<div ref={emblaRef} className="overflow-hidden">
+				<div className="flex">{children}</div>
+			</div>
+
+			{/* Left arrow */}
+			<button onClick={() => emblaApi?.scrollPrev()} className="absolute left-2 top-1/2 -translate-y-1/2 cursor-pointer" aria-label="Previous slide">
+				<Image src={leftArrowSrc} alt="Previous" width={24} height={24} />
+			</button>
+
+			{/* Right arrow */}
+			<button onClick={() => emblaApi?.scrollNext()} className="absolute right-2 top-1/2 -translate-y-1/2 cursor-pointer" aria-label="Next slide">
+				<Image src={rightArrowSrc} alt="Next" width={24} height={24} />
+			</button>
+
+			{/* Dots */}
+			{showDots && (
+				<div className="mt-4 flex justify-center gap-2">
+					{scrollSnaps.map((_, index) => (
+						<button
+							key={index}
+							onClick={() => emblaApi?.scrollTo(index)}
+							className={`
+								h-2 w-2 rounded-full transition cursor-pointer
+								${index === selectedIndex ? "bg-(--accent-color)" : "bg-(--inactive-color)"}
+							`}
+							aria-label={`Go to slide ${index + 1}`}
+						/>
+					))}
+				</div>
+			)}
+		</div>
+	);
+}

@@ -14,7 +14,7 @@ export default function Dropdown({ trigger, children, active }: any) {
 				onClick={() => setOpen((prev) => !prev)}
 				className={`
           flex items-center cursor-pointer
-          ${active ? "text-(--active-color) font-semibold" : ""}
+          ${active ? "text-(--accent-color)" : ""}
         `}
 			>
 				{trigger}

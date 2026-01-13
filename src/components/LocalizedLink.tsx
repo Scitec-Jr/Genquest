@@ -18,7 +18,9 @@ export default function LocalizedLink({ locale, href, children, activeClassName 
 
 	const localizedHref = `/${locale}${href === "/" ? "" : href}`;
 
-	const isActive = pathname === localizedHref || pathname.startsWith(`${localizedHref}/`);
+	const isHome = href === "/";
+
+	const isActive = isHome ? pathname === `/${locale}` || pathname === `/${locale}/` : pathname === localizedHref || pathname.startsWith(`${localizedHref}/`);
 
 	const finalClassName = `
     ${className}

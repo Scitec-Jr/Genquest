@@ -34,5 +34,17 @@
         "heroReceptionText": "\"Entendemos sua jornada e lutamos por ela.\"",
         "heroEthicTitle": "Ética e impacto:",
         "heroEthicText": "\"Compromisso com a transparência e sustentabilidade.\""
-	}
+	},
+    "portfolio": {
+        "title": "Portfólio de Soluções",
+        "heroTitle": "Mais do que consultoria. Um elo de confiança em saúde.",
+        "heroText": "Mais do que uma empresa de consultoria ou representação farmacêutica, a GENQUEST é um elo de confiança entre ciência e pacientes. Nosso propósito é humanizar a jornada de acesso a medicamentos para doenças raras, conectando inovação e empatia em cada interação.",
+        "carouselTitle1": "Consultoria de acesso",
+        "carouselText1": "Desenhamos estratégias de acesso a medicamentos para doenças raras, apoiando decisões de incorporação e uso racional, sempre com foco no paciente.",
+        "representationCard": "Representação",
+        "educationCard": "Educação médica",
+        "advocacyCard": "Advocacia",
+        "accessCard": "Consultoria de Acesso",
+        "contactButton": "Entre em Contato"
+    }
 }
