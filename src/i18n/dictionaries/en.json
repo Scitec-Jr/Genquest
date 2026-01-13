@@ -46,5 +46,19 @@
         "advocacyCard": "Advocacia",
         "accessCard": "Consultoria de Acesso",
         "contactButton": "Entre em Contato"
+    },
+    "activity": {
+        "title": "Áreas de Atuação",
+        "industriesCard": "Indústrias Representadas",
+        "partnersCard": "Parceiros Institucionais",
+        "colaborationCard": "Rede de Colaboração",
+        "partnersTitle": "Parceiros",
+        "carouselTitle1": "Parceiro",
+        "carouselText1": "Lorem ipsum dolor sit amet",
+        "heroCTA": "Quer ser nosso parceiro?\nAcesse o link abaixo e preencha o formulário!",
+        "heroCTAButton": "Entre em Contato!",
+        "missionCardTitle": "Missão",
+        "visionCardTitle": "Visão",
+        "valuesCardTitle": "Valores"
     }
 }

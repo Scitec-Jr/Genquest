@@ -6,7 +6,7 @@ import Image from "next/image";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function Carousel({ children, leftArrowSrc = "/assets/icons/carouselArrowLeft.png", rightArrowSrc = "/assets/icons/carouselArrowRight.png", showDots = true }: any) {
-	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
 	const [selectedIndex, setSelectedIndex] = useState(0);
 
 	useEffect(() => {
@@ -32,17 +32,14 @@ export default function Carousel({ children, leftArrowSrc = "/assets/icons/carou
 				<div className="flex">{children}</div>
 			</div>
 
-			{/* Left arrow */}
 			<button onClick={() => emblaApi?.scrollPrev()} className="absolute left-2 top-1/2 -translate-y-1/2 cursor-pointer" aria-label="Previous slide">
 				<Image src={leftArrowSrc} alt="Previous" width={24} height={24} />
 			</button>
 
-			{/* Right arrow */}
 			<button onClick={() => emblaApi?.scrollNext()} className="absolute right-2 top-1/2 -translate-y-1/2 cursor-pointer" aria-label="Next slide">
 				<Image src={rightArrowSrc} alt="Next" width={24} height={24} />
 			</button>
 
-			{/* Dots */}
 			{showDots && (
 				<div className="mt-4 flex justify-center gap-2">
 					{scrollSnaps.map((_, index) => (
