@@ -60,5 +60,26 @@
         "missionCardTitle": "Missão",
         "visionCardTitle": "Visão",
         "valuesCardTitle": "Valores"
+    },
+    "patientsAndFamily": {
+        "title": "Para Pacientes e Famílias",
+        "guideTitle": "Como Obter seu Medicamento:\nGuia Rápido",
+        "guideStep1": "Passo 1.",
+        "guideStep1Text": "Consulte seu médico para obter a prescrição do medicamento necessário.",
+        "guideStep2": "Passo 2.",
+        "guideStep2Text": "Entre em contato conosco através do nosso formulário de contato ou telefone.",
+        "guideStep3": "Passo 3.",
+        "guideStep3Text": "Forneça a prescrição médica e os documentos necessários para iniciar o processo.",
+        "guideStep4": "Passo 4.",
+        "guideStep4Text": "Acompanhe o status do seu pedido conosco até a entrega do medicamento.",
+        "guideHelp": "Precisa de ajuda?",
+        "historyTitle": "História",
+        "testimonialTitle": "Depoimentos",
+        "testimonialText": "\"A GENQUEST foi fundamental para que eu pudesse acessar o tratamento que precisava. A equipe foi extremamente atenciosa e eficiente.\"",
+        "testimonialAuthor": "Nome do Paciente",
+        "shareButton": "Compartilhe A Sua História",
+        "curiosityTitle": "Curiosidades",
+        "curiosityTitle1": "Título",
+        "curiosityText1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
 }

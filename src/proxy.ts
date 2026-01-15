@@ -5,7 +5,9 @@ function getLocale(request: NextRequest): string {
 	const acceptLanguage = request.headers.get("accept-language");
 	if (!acceptLanguage) return defaultLocale;
 
-	const preferred = acceptLanguage.split(",").map((lang) => lang.split(";")[0].toLowerCase());
+	const preferred = acceptLanguage
+		.split(",")
+		.map((lang) => lang.split(";")[0].toLowerCase());
 
 	for (const lang of preferred) {
 		const baseLang = lang.split("-")[0];
@@ -17,17 +19,24 @@ function getLocale(request: NextRequest): string {
 	return defaultLocale;
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
 	const { pathname } = request.nextUrl;
 
-	if (pathname.startsWith("/_next") || pathname.startsWith("/api") || pathname.includes(".")) {
-		return;
+	if (
+		pathname.startsWith("/_next") ||
+		pathname.startsWith("/api") ||
+		pathname.includes(".")
+	) {
+		return NextResponse.next();
 	}
 
-	const hasLocale = locales.some((locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`));
+	const hasLocale = locales.some(
+		(locale) =>
+			pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
+	);
 
 	if (hasLocale) {
-		return;
+		return NextResponse.next();
 	}
 
 	const locale = getLocale(request);
@@ -37,7 +46,3 @@ export function middleware(request: NextRequest) {
 
 	return NextResponse.redirect(url);
 }
-
-export const config = {
-	matcher: ["/((?!_next|api|.*\\..*).*)"],
-};

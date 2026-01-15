@@ -28,8 +28,8 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 
 			<section className="bg-(--main-color) py-8 px-4 md:px-8">
 				<div className="max-w-360 mx-auto text-(--accent-color)">
-					<Carousel >
-						<div className="flex flex-col md:flex-row items-center gap-8 min-w-full px-12">
+					<Carousel>
+						<div className="flex flex-col md:flex-row items-center gap-8 min-w-full px-4">
 							<div>
 								<h2 className="mb-4 text-4xl font-semibold">{dict.portfolio.carouselTitle1} 1</h2>
 								<p>{dict.portfolio.carouselText1}</p>
@@ -40,7 +40,7 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 							</div>
 						</div>
 
-						<div className="flex flex-col md:flex-row items-center gap-8 min-w-full px-12">
+						<div className="flex flex-col md:flex-row items-center gap-8 min-w-full px-4">
 							<div>
 								<h2 className="mb-4 text-4xl font-semibold">{dict.portfolio.carouselTitle1} 2</h2>
 								<p>{dict.portfolio.carouselText1}</p>
@@ -51,7 +51,7 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 							</div>
 						</div>
 
-						<div className="flex flex-col md:flex-row items-center gap-8 min-w-full px-12">
+						<div className="flex flex-col md:flex-row items-center gap-8 min-w-full px-4">
 							<div>
 								<h2 className="mb-4 text-4xl font-semibold">{dict.portfolio.carouselTitle1} 3</h2>
 								<p>{dict.portfolio.carouselText1}</p>

@@ -43,7 +43,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 					<h2 className="mb-8 text-4xl text-(--accent-color) text-center">{dict.activity.partnersTitle}</h2>
 
 					<Carousel showDots={false}>
-						<div className="min-w-full lg:min-w-auto lg:flex-[0_0_50%] px-12">
+						<div className="min-w-full lg:min-w-auto lg:flex-[0_0_50%] px-4">
 							<div className="flex flex-col sm:flex-row items-center gap-4 p-4 sm:p-6 bg-(--main-color) rounded-xl text-(--accent-color)">
 								<div className="shrink-0">
 									<Image src="/assets/icons/representation.png" alt="Solução 1" width={80} height={80} />
@@ -56,7 +56,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 							</div>
 						</div>
 
-						<div className="min-w-full lg:min-w-auto lg:flex-[0_0_50%] px-12">
+						<div className="min-w-full lg:min-w-auto lg:flex-[0_0_50%] px-4">
 							<div className="flex flex-col sm:flex-row items-center gap-4 p-4 sm:p-6 bg-(--main-color) rounded-xl text-(--accent-color)">
 								<div className="shrink-0">
 									<Image src="/assets/icons/representation.png" alt="Solução 1" width={80} height={80} />
@@ -69,7 +69,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 							</div>
 						</div>
 
-						<div className="min-w-full lg:min-w-auto lg:flex-[0_0_50%] px-12">
+						<div className="min-w-full lg:min-w-auto lg:flex-[0_0_50%] px-4">
 							<div className="flex flex-col sm:flex-row items-center gap-4 p-4 sm:p-6 bg-(--main-color) rounded-xl text-(--accent-color)">
 								<div className="shrink-0">
 									<Image src="/assets/icons/representation.png" alt="Solução 1" width={80} height={80} />

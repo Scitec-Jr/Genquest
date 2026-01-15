@@ -47,21 +47,21 @@ export default function Header({ locale, dict }: any) {
 
 					<Dropdown trigger={dict.informations} active={infoActive}>
 						<div className="flex flex-col gap-2">
-							<LocalizedLink locale={locale} href="/about">
+							<LocalizedLink locale={locale} href="/sobre-nos">
 								{dict.about}
 							</LocalizedLink>
 
-							<LocalizedLink locale={locale} href="/performance">
+							<LocalizedLink locale={locale} href="/artigos-e-noticias">
 								{dict.articles}
 							</LocalizedLink>
 
-							<LocalizedLink locale={locale} href="/performance">
+							<LocalizedLink locale={locale} href="/para-pacientes-e-familias">
 								{dict.patientsAndFamily}
 							</LocalizedLink>
 						</div>
 					</Dropdown>
 
-					<LocalizedLink locale={locale} href="/performance">
+					<LocalizedLink locale={locale} href="/contato">
 						{dict.contact}
 					</LocalizedLink>
 				</div>

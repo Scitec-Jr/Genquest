@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function Carousel({ children, leftArrowSrc = "/assets/icons/carouselArrowLeft.png", rightArrowSrc = "/assets/icons/carouselArrowRight.png", showDots = true }: any) {
-	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
+export default function Carousel({ children, leftArrowSrc = "/assets/icons/carouselArrowLeft.png", rightArrowSrc = "/assets/icons/carouselArrowRight.png", showDots = true, align = "start" }: any) {
+	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: align });
 	const [selectedIndex, setSelectedIndex] = useState(0);
 
 	useEffect(() => {
@@ -27,17 +27,17 @@ export default function Carousel({ children, leftArrowSrc = "/assets/icons/carou
 	const scrollSnaps = emblaApi?.scrollSnapList() ?? [];
 
 	return (
-		<div className="relative w-full">
+		<div className="relative w-full px-12">
 			<div ref={emblaRef} className="overflow-hidden">
 				<div className="flex">{children}</div>
 			</div>
 
 			<button onClick={() => emblaApi?.scrollPrev()} className="absolute left-2 top-1/2 -translate-y-1/2 cursor-pointer" aria-label="Previous slide">
-				<Image src={leftArrowSrc} alt="Previous" width={24} height={24} />
+				<Image src={leftArrowSrc} alt="Previous" width={34} height={34} />
 			</button>
 
 			<button onClick={() => emblaApi?.scrollNext()} className="absolute right-2 top-1/2 -translate-y-1/2 cursor-pointer" aria-label="Next slide">
-				<Image src={rightArrowSrc} alt="Next" width={24} height={24} />
+				<Image src={rightArrowSrc} alt="Next" width={34} height={34} />
 			</button>
 
 			{showDots && (
