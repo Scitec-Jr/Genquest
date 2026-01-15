@@ -82,6 +82,13 @@
         "curiosityTitle1": "Título",
         "curiosityText1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
+    "aboutUs": {
+        "title": "Sobre Nós",
+        "heroTitle": "Humanização do acesso à inovação à saúde",
+        "heroText": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "methodologyTitle": "O método Genquest",
+        "methodologyText": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
     "privacyPolicy": {
         "title": "Política de Privacidade"
     }
