@@ -81,5 +81,8 @@
         "curiosityTitle": "Curiosidades",
         "curiosityTitle1": "Título",
         "curiosityText1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    "privacyPolicy": {
+        "title": "Política de Privacidade"
     }
 }

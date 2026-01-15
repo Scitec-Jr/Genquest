@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function Footer({ dict }: any) {
@@ -27,7 +28,7 @@ export default function Footer({ dict }: any) {
 				<div className="flex flex-col min-[448px]:flex-row gap-4 md:gap-8">
 					<div className="flex flex-col gap-2">
 						<h2 className="font-bold">{dict.politcs}</h2>
-						<a href="">{dict.privacyPolicy}</a>
+						<Link href="/politica-de-privacidade">{dict.privacyPolicy}</Link>
 						<a href="">{dict.termsOfUse}</a>
 						<a href="">{dict.legalNotice}</a>
 					</div>
