@@ -1,12 +1,24 @@
 "use client";
 
 import useEmblaCarousel from "embla-carousel-react";
-import { useEffect, useState } from "react";
+import Autoplay from "embla-carousel-autoplay";
+import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function Carousel({ children, leftArrowSrc = "/assets/icons/carouselArrowLeft.png", rightArrowSrc = "/assets/icons/carouselArrowRight.png", showDots = true, align = "start" }: any) {
-	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: align });
+export default function Carousel({ children, leftArrowSrc = "/assets/icons/carouselArrowLeft.png", rightArrowSrc = "/assets/icons/carouselArrowRight.png", showDots = true, align = "start", autoplay = false, autoplayDelay = 2000 }: any) {
+	const autoplayPlugin = useMemo(() => {
+		if (!autoplay) return undefined;
+
+		return Autoplay({
+			delay: autoplayDelay,
+			stopOnMouseEnter: true,
+			stopOnInteraction: false,
+		});
+	}, [autoplay, autoplayDelay]);
+
+	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align }, autoplayPlugin ? [autoplayPlugin] : []);
+
 	const [selectedIndex, setSelectedIndex] = useState(0);
 
 	useEffect(() => {
@@ -28,7 +40,7 @@ export default function Carousel({ children, leftArrowSrc = "/assets/icons/carou
 
 	return (
 		<div className="relative w-full px-12">
-			<div ref={emblaRef} className="overflow-hidden">
+			<div ref={emblaRef} className="overflow-hidden" onMouseLeave={() => autoplayPlugin?.play()}>
 				<div className="flex">{children}</div>
 			</div>
 
@@ -48,7 +60,7 @@ export default function Carousel({ children, leftArrowSrc = "/assets/icons/carou
 							onClick={() => emblaApi?.scrollTo(index)}
 							className={`
 								h-2 w-2 rounded-full transition cursor-pointer
-								${index === selectedIndex ? "bg-(--accent-color)" : "bg-(--inactive-color)"}
+								${index === selectedIndex ? "bg-(--accent-color)" : "bg-(--secondary-accent-color)"}
 							`}
 							aria-label={`Go to slide ${index + 1}`}
 						/>

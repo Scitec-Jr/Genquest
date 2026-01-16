@@ -10,10 +10,10 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 		<main>
 			<section className="py-8 px-4 md:px-8">
 				<div className="max-w-360 mx-auto">
-					<h1 className="mb-8 text-6xl text-(--accent-color) text-center">{dict.aboutUs.title}</h1>
+					<h1 className="mb-8 text-6xl secondary-font text-(--accent-color) text-center">{dict.aboutUs.title}</h1>
 
                     <div className="lg:w-3/4 mx-auto p-8 bg-(--main-color) rounded-xl">
-                        <h2 className="mb-4 text-2xl text-(--accent-color) text-center">{dict.aboutUs.heroTitle}</h2>
+                        <h2 className="mb-4 text-2xl secondary-font text-(--accent-color) text-center">{dict.aboutUs.heroTitle}</h2>
 
                         <p className="text-white">{dict.aboutUs.heroText}</p>
                     </div>
@@ -22,7 +22,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 
 			<section className="py-8 px-4 md:px-8">
 				<div className="max-w-360 mx-auto">
-                    <h2 className="mb-4 text-4xl text-(--accent-color) text-center">{dict.aboutUs.methodologyTitle}</h2>
+                    <h2 className="mb-4 text-4xl secondary-font text-(--accent-color) text-center">{dict.aboutUs.methodologyTitle}</h2>
 
                     <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
                         <div className="flex-1">

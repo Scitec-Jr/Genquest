@@ -11,7 +11,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 		<main>
 			<section className="py-8 px-4 md:px-8">
 				<div className="max-w-360 mx-auto">
-					<h1 className="mb-8 text-6xl text-(--accent-color) text-center">{dict.activity.title}</h1>
+					<h1 className="mb-8 text-6xl secondary-font text-(--accent-color) text-center">{dict.activity.title}</h1>
 
 					<div className="flex flex-wrap justify-center gap-8">
 						<div className="flex flex-col w-80 pb-4 bg-(--main-color) text-(--accent-color) rounded-4xl">
@@ -40,9 +40,9 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 
 			<section className="p-4 md:px-8">
 				<div className="max-w-360 mx-auto text-(--accent-color)">
-					<h2 className="mb-8 text-4xl text-(--accent-color) text-center">{dict.activity.partnersTitle}</h2>
+					<h2 className="mb-8 text-4xl secondary-font text-(--accent-color) text-center">{dict.activity.partnersTitle}</h2>
 
-					<Carousel showDots={false}>
+					<Carousel autoplay showDots={false}>
 						<div className="min-w-full lg:min-w-auto lg:flex-[0_0_50%] px-4">
 							<div className="flex flex-col sm:flex-row items-center gap-4 p-4 sm:p-6 bg-(--main-color) rounded-xl text-(--accent-color)">
 								<div className="shrink-0">
@@ -90,7 +90,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 					<div className="sm:w-1/2">
 						<h2 className="mb-8 text-2xl text">{dict.activity.heroCTA}</h2>
 
-						<a href="" className="py-2 px-4 bg-(--main-color) rounded-full text-lg text-(--accent-color)">
+						<a href="" className="py-2 px-4 bg-(--main-color) hover:bg-(--accent-color) border-2 border-(--main-color) rounded-full text-lg text-(--accent-color) hover:text-(--main-color) transition-colors">
 							{dict.activity.heroCTAButton}
 						</a>
 					</div>
@@ -103,7 +103,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
                 <div className="flex flex-wrap justify-center gap-8 md:gap-16 max-w-360 mx-auto">
                     <div className="w-68 p-4 bg-white rounded-4xl">
                         <div className="flex items-center justify-between mb-4">
-                            <h2 className="text-3xl">{dict.activity.missionCardTitle}</h2>
+                            <h2 className="text-3xl secondary-font">{dict.activity.missionCardTitle}</h2>
 
                             <Image src="/assets/icons/mission.png" alt="Missão" width={40} height={40} />
                         </div>
@@ -113,7 +113,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 
                     <div className="w-68 p-4 bg-white rounded-4xl">
                         <div className="flex items-center justify-between mb-4">
-                            <h2 className="text-3xl">{dict.activity.visionCardTitle}</h2>
+                            <h2 className="text-3xl secondary-font">{dict.activity.visionCardTitle}</h2>
 
                             <Image src="/assets/icons/mission.png" alt="Missão" width={40} height={40} />
                         </div>
@@ -123,7 +123,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 
                     <div className="w-68 p-4 bg-white rounded-4xl">
                         <div className="flex items-center justify-between mb-4">
-                            <h2 className="text-3xl">{dict.activity.valuesCardTitle}</h2>
+                            <h2 className="text-3xl secondary-font">{dict.activity.valuesCardTitle}</h2>
 
                             <Image src="/assets/icons/mission.png" alt="Missão" width={40} height={40} />
                         </div>

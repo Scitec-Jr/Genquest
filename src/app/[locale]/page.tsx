@@ -12,20 +12,20 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
 				<div className="flex flex-col-reverse md:flex-row max-w-360 mx-auto">
 					<div className="flex flex-col items-center justify-center flex-1 py-8">
 						<Image src="/assets/global/logo2.png" alt="Logo" width={200} height={200} className="hidden md:block" />
-						<h1 className="text-(--accent-color)">{dict.home.slogan}</h1>
+						<h1 className="secondary-font text-lg text-(--accent-color)">{dict.home.slogan}</h1>
 					</div>
 
-					<div className="flex flex-1">
-						<div className="relative w-full">
+					<div className="flex flex-1 max-h-112 min-h-112">
+						<div className="relative w-1/2 hover:w-3/5 transition-all duration-700">
 							<Image src="/assets/images/client.png" alt="Cliente" width={300} height={450} className="w-full h-full" />
-							<a href="" className="absolute bottom-8 left-1/2 -translate-x-1/2 w-max p-4 bg-white border-2 rounded-full">
+							<a href="" className="absolute bottom-8 left-1/2 -translate-x-1/2 w-max p-4 bg-white hover:bg-(--secondary-accent-color) border-2 hover:border-white rounded-full hover:text-white transition-colors">
 								{dict.home.clientButton}
 							</a>
 						</div>
 
-						<div className="relative w-full">
+						<div className="relative w-1/2 hover:w-3/5 transition-all duration-700">
 							<Image src="/assets/images/partner.png" alt="Parceiro" width={300} height={450} className="w-full h-full" />
-							<a href="" className="absolute bottom-8 left-1/2 -translate-x-1/2 w-max p-4 bg-white border-2 rounded-full">
+							<a href="" className="absolute bottom-8 left-1/2 -translate-x-1/2 w-max p-4 bg-white hover:bg-(--secondary-accent-color) border-2 hover:border-white rounded-full hover:text-white transition-colors">
 								{dict.home.partnerButton}
 							</a>
 						</div>

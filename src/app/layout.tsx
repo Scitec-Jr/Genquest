@@ -1,9 +1,9 @@
 import "./globals.css";
-import { saira } from "./fonts";
+import { eirian, barlow } from "./fonts";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="pt" className={saira.variable} suppressHydrationWarning>
+		<html lang="pt" className={`${eirian.variable} ${barlow.variable}`} suppressHydrationWarning>
 			<body>{children}</body>
 		</html>
 	);

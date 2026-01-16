@@ -13,11 +13,10 @@ export default function Header({ locale, dict }: any) {
 	const pathname = usePathname();
 
 	const servicesActive = pathname.startsWith(`/${locale}/portfolio-de-solucoes`) || pathname.startsWith(`/${locale}/areas-de-atuacao`);
-
-	const infoActive = pathname.startsWith(`/${locale}/about`) || pathname.startsWith(`/${locale}/articles`) || pathname.startsWith(`/${locale}/para-pacientes-e-familias`);
+	const infoActive = pathname.startsWith(`/${locale}/sobre-nos`) || pathname.startsWith(`/${locale}/artigos-e-noticias`) || pathname.startsWith(`/${locale}/para-pacientes-e-familias`);
 
 	return (
-		<header className="relative py-2 px-4 md:px-8 lg:px-16 bg-(--main-color) text-(--inactive-color) text-sm z-50">
+		<header className="relative py-2 px-4 md:px-8 lg:px-16 bg-(--main-color) text-(--secondary-accent-color) text-sm z-50">
             {/* Menu padrão */}
 			<nav className="flex items-center max-w-360 mx-auto">
 				<LocalizedLink locale={locale} href="/" className="mr-auto">
@@ -49,10 +48,6 @@ export default function Header({ locale, dict }: any) {
 						<div className="flex flex-col gap-2">
 							<LocalizedLink locale={locale} href="/sobre-nos">
 								{dict.about}
-							</LocalizedLink>
-
-							<LocalizedLink locale={locale} href="/artigos-e-noticias">
-								{dict.articles}
 							</LocalizedLink>
 
 							<LocalizedLink locale={locale} href="/para-pacientes-e-familias">
@@ -99,10 +94,6 @@ export default function Header({ locale, dict }: any) {
 						<div className="flex flex-col gap-2">
 							<LocalizedLink locale={locale} href="/sobre-nos">
 								{dict.about}
-							</LocalizedLink>
-
-							<LocalizedLink locale={locale} href="/artigos-e-noticias">
-								{dict.articles}
 							</LocalizedLink>
 
 							<LocalizedLink locale={locale} href="/para-pacientes-e-familias">

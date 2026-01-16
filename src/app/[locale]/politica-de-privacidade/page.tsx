@@ -9,7 +9,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 		<main>
 			<section className="py-8 px-4 md:px-8 bg-(--main-color)">
 				<div className="max-w-360 mx-auto">
-					<h1 className="text-6xl text-(--accent-color) text-center">{dict.privacyPolicy.title}</h1>
+					<h1 className="text-6xl secondary-font text-(--accent-color) text-center">{dict.privacyPolicy.title}</h1>
 				</div>
 			</section>
 

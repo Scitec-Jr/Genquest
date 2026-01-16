@@ -11,7 +11,7 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 		<main>
 			<section className="bg-(--main-color) p-8">
 				<div className="max-w-360 mx-auto">
-					<h1 className="text-6xl text-(--accent-color) text-center">{dict.portfolio.title}</h1>
+					<h1 className="text-6xl secondary-font text-(--accent-color) text-center">{dict.portfolio.title}</h1>
 				</div>
 			</section>
 
@@ -31,7 +31,7 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 					<Carousel>
 						<div className="flex flex-col md:flex-row items-center gap-8 min-w-full px-4">
 							<div>
-								<h2 className="mb-4 text-4xl font-semibold">{dict.portfolio.carouselTitle1} 1</h2>
+								<h2 className="mb-4 secondary-font text-4xl font-semibold">{dict.portfolio.carouselTitle1} 1</h2>
 								<p>{dict.portfolio.carouselText1}</p>
 							</div>
 
@@ -42,7 +42,7 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 
 						<div className="flex flex-col md:flex-row items-center gap-8 min-w-full px-4">
 							<div>
-								<h2 className="mb-4 text-4xl font-semibold">{dict.portfolio.carouselTitle1} 2</h2>
+								<h2 className="mb-4 secondary-font text-4xl font-semibold">{dict.portfolio.carouselTitle1} 2</h2>
 								<p>{dict.portfolio.carouselText1}</p>
 							</div>
 
@@ -53,7 +53,7 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 
 						<div className="flex flex-col md:flex-row items-center gap-8 min-w-full px-4">
 							<div>
-								<h2 className="mb-4 text-4xl font-semibold">{dict.portfolio.carouselTitle1} 3</h2>
+								<h2 className="mb-4 secondary-font text-4xl font-semibold">{dict.portfolio.carouselTitle1} 3</h2>
 								<p>{dict.portfolio.carouselText1}</p>
 							</div>
 
@@ -67,52 +67,84 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 
 			<section className="py-8 px-4 md:px-8">
 				<div className="flex flex-wrap gap-8 justify-center max-w-360 mx-auto">
-					<div className="flex gap-4 w-96 p-4 sm:p-6 bg-(--main-color) rounded-xl text-(--accent-color)">
-						<div className="flex items-center flex-1">
-							<Image src="/assets/icons/representation.png" alt="Solução 1" width={80} height={80} className="w-full" />
+					<div className="group w-96 h-fit bg-(--main-color) rounded-xl text-(--accent-color)">
+						<div className="flex gap-4 p-4 sm:p-6">
+							<div className="flex items-center w-20">
+								<Image src="/assets/icons/representation.png" alt="Solução 1" width={80} height={80} className="w-full" />
+							</div>
+
+							<div>
+								<h2 className="mb-4 text-xl secondary-font">{dict.portfolio.accessCard}</h2>
+                                <p className="w-fit py-2 px-4 bg-(--accent-color) text-(--main-color) rounded-full">{dict.portfolio.seeMoreButton}</p>
+							</div>
 						</div>
 
-						<div className="flex-5">
-							<h2 className="text-xl">{dict.portfolio.accessCard}</h2>
-							<p>Lorem ipsum dolor sit amet consectetur.</p>
-						</div>
-					</div>
-
-					<div className="flex gap-4 w-96 p-4 sm:p-6 bg-(--main-color) rounded-xl text-(--accent-color)">
-						<div className="flex items-center flex-1">
-							<Image src="/assets/icons/representation.png" alt="Solução 1" width={80} height={80} className="w-full" />
-						</div>
-
-						<div className="flex-5">
-							<h2 className="text-xl">{dict.portfolio.accessCard}</h2>
-							<p>Lorem ipsum dolor sit amet consectetur.</p>
+						<div className="grid overflow-hidden transition-all duration-300 ease-out grid-rows-[0fr] opacity-0 group-hover:grid-rows-[1fr] group-hover:opacity-100">
+							<div className="overflow-hidden px-4 pb-4 sm:px-6">
+								<p>Lorem ipsum dolor sit amet consectetur.</p>
+							</div>
 						</div>
 					</div>
 
-					<div className="flex gap-4 w-96 p-4 sm:p-6 bg-(--main-color) rounded-xl text-(--accent-color)">
-						<div className="flex items-center flex-1">
-							<Image src="/assets/icons/representation.png" alt="Solução 1" width={80} height={80} className="w-full" />
+					<div className="group w-96 h-fit bg-(--main-color) rounded-xl text-(--accent-color)">
+						<div className="flex gap-4 p-4 sm:p-6">
+							<div className="flex items-center w-20">
+								<Image src="/assets/icons/representation.png" alt="Solução 1" width={80} height={80} className="w-full" />
+							</div>
+
+							<div>
+								<h2 className="mb-4 text-xl secondary-font">{dict.portfolio.accessCard}</h2>
+                                <p className="w-fit py-2 px-4 bg-(--accent-color) text-(--main-color) rounded-full">{dict.portfolio.seeMoreButton}</p>
+							</div>
 						</div>
 
-						<div className="flex-5">
-							<h2 className="text-xl">{dict.portfolio.accessCard}</h2>
-							<p>Lorem ipsum dolor sit amet consectetur.</p>
+						<div className="grid overflow-hidden transition-all duration-300 ease-out grid-rows-[0fr] opacity-0 group-hover:grid-rows-[1fr] group-hover:opacity-100">
+							<div className="overflow-hidden px-4 pb-4 sm:px-6">
+								<p>Lorem ipsum dolor sit amet consectetur.</p>
+							</div>
 						</div>
 					</div>
 
-					<div className="flex gap-4 w-96 p-4 sm:p-6 bg-(--main-color) rounded-xl text-(--accent-color)">
-						<div className="flex items-center flex-1">
-							<Image src="/assets/icons/representation.png" alt="Solução 1" width={80} height={80} className="w-full" />
+					<div className="group w-96 h-fit bg-(--main-color) rounded-xl text-(--accent-color)">
+						<div className="flex gap-4 p-4 sm:p-6">
+							<div className="flex items-center w-20">
+								<Image src="/assets/icons/representation.png" alt="Solução 1" width={80} height={80} className="w-full" />
+							</div>
+
+							<div>
+								<h2 className="mb-4 text-xl secondary-font">{dict.portfolio.accessCard}</h2>
+                                <p className="w-fit py-2 px-4 bg-(--accent-color) text-(--main-color) rounded-full">{dict.portfolio.seeMoreButton}</p>
+							</div>
 						</div>
 
-						<div className="flex-5">
-							<h2 className="text-xl">{dict.portfolio.accessCard}</h2>
-							<p>Lorem ipsum dolor sit amet consectetur.</p>
+						<div className="grid overflow-hidden transition-all duration-300 ease-out grid-rows-[0fr] opacity-0 group-hover:grid-rows-[1fr] group-hover:opacity-100">
+							<div className="overflow-hidden px-4 pb-4 sm:px-6">
+								<p>Lorem ipsum dolor sit amet consectetur.</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="group w-96 h-fit bg-(--main-color) rounded-xl text-(--accent-color)">
+						<div className="flex gap-4 p-4 sm:p-6">
+							<div className="flex items-center w-20">
+								<Image src="/assets/icons/representation.png" alt="Solução 1" width={80} height={80} className="w-full" />
+							</div>
+
+							<div>
+								<h2 className="mb-4 text-xl secondary-font">{dict.portfolio.accessCard}</h2>
+                                <p className="w-fit py-2 px-4 bg-(--accent-color) text-(--main-color) rounded-full">{dict.portfolio.seeMoreButton}</p>
+							</div>
+						</div>
+
+						<div className="grid overflow-hidden transition-all duration-300 ease-out grid-rows-[0fr] opacity-0 group-hover:grid-rows-[1fr] group-hover:opacity-100">
+							<div className="overflow-hidden px-4 pb-4 sm:px-6">
+								<p>Lorem ipsum dolor sit amet consectetur.</p>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<a href="" className="block w-fit mt-8 mx-auto p-4 px-8 bg-(--main-color) rounded-full text-xl text-(--accent-color)">
+				<a href="" className="block w-fit mt-8 mx-auto p-4 px-8 bg-(--main-color) hover:bg-(--accent-color) border-2 border-(--main-color) rounded-full text-xl text-(--accent-color) hover:text-(--main-color) transition-colors">
 					{dict.portfolio.contactButton}
 				</a>
 			</section>

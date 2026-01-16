@@ -11,10 +11,10 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 		<main>
 			<section className="py-8 px-4 md:px-8">
 				<div className="max-w-360 mx-auto">
-					<h1 className="mb-8 text-6xl text-(--accent-color) text-center">{dict.patientsAndFamily.title}</h1>
+					<h1 className="mb-8 text-6xl secondary-font text-(--accent-color) text-center">{dict.patientsAndFamily.title}</h1>
 
 					<div className="w-fit max-w-full mx-auto p-4 md:p-8 bg-(--main-color) rounded-xl text-white">
-						<h2 className="mb-8 text-2xl text-(--accent-color) text-center">{dict.patientsAndFamily.guideTitle}</h2>
+						<h2 className="mb-8 text-2xl secondary-font text-(--accent-color) text-center">{dict.patientsAndFamily.guideTitle}</h2>
 
 						<div className="flex flex-col md:flex-row items-center justify-center gap-4">
 							<div className="flex flex-col items-center w-60">
@@ -63,7 +63,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 
 			<section className="py-8 px-4 md:px-8 bg-(--main-color) text-(--accent-color)">
 				<div className="max-w-360 mx-auto">
-					<h2 className="mb-8 text-4xl">{dict.patientsAndFamily.historyTitle}</h2>
+					<h2 className="mb-8 text-4xl secondary-font">{dict.patientsAndFamily.historyTitle}</h2>
 
 					<Image src="/assets/images/history.png" alt="História" width={720} height={400} className="lg:w-3/4 mx-auto" />
 				</div>
@@ -71,7 +71,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 
 			<section className="py-8 px-4 md:px-8">
 				<div className="max-w-360 mx-auto">
-					<h2 className="mb-8 text-4xl text-(--accent-color) text-center">{dict.patientsAndFamily.testimonialTitle}</h2>
+					<h2 className="mb-8 text-4xl secondary-font text-(--accent-color) text-center">{dict.patientsAndFamily.testimonialTitle}</h2>
 
 					<Carousel showDots={false}>
 						<div className="min-w-full lg:min-w-auto lg:flex-[0_0_50%] px-4">
@@ -131,7 +131,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 						</div>
 					</Carousel>
 
-					<a href="" className="block w-fit mt-8 ms-auto py-2 px-4 bg-(--accent-color) rounded-full text-lg text-(--main-color)">
+					<a href="" className="block w-fit mt-8 ms-auto py-2 px-4 bg-(--accent-color) hover:bg-(--main-color) border-2 border-(--accent-color) rounded-full text-lg text-(--main-color) hover:text-(--accent-color) transition-colors">
 						{dict.activity.heroCTAButton}
 					</a>
 				</div>
@@ -139,9 +139,9 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 
             <section className="py-8 px-4 md:px-8 bg-(--accent-color)">
                 <div className="max-w-360 mx-auto">
-                    <h2 className="mb-8 text-4xl">{dict.patientsAndFamily.curiosityTitle}</h2>
+                    <h2 className="mb-8 text-4xl secondary-font">{dict.patientsAndFamily.curiosityTitle}</h2>
 
-                    <Carousel leftArrowSrc={"/assets/icons/carouselArrowLeft2.png"} rightArrowSrc={"/assets/icons/carouselArrowRight2.png"} showDots={false} align="center">
+                    <Carousel autoplay leftArrowSrc={"/assets/icons/carouselArrowLeft2.png"} rightArrowSrc={"/assets/icons/carouselArrowRight2.png"} showDots={false} align="center">
                         <div className="flex md:flex-[0_0_50%] lg:flex-[0_0_33.4%] justify-center min-w-full md:min-w-auto px-4">
 							<div className="flex flex-col items-center w-60">
                                 <Image src="/assets/images/placeholder.png" alt="Curiosidade 1" width={200} height={200} className="mb-4" />
