@@ -41,26 +41,44 @@
         "heroText": "Mais do que uma empresa de consultoria ou representação farmacêutica, a GENQUEST é um elo de confiança entre ciência e pacientes. Nosso propósito é humanizar a jornada de acesso a medicamentos para doenças raras, conectando inovação e empatia em cada interação.",
         "carouselTitle1": "Consultoria de acesso",
         "carouselText1": "Desenhamos estratégias de acesso a medicamentos para doenças raras, apoiando decisões de incorporação e uso racional, sempre com foco no paciente.",
+        "carouselTitle2": "Representação de fabricantes",
+        "carouselText2": "Representamos fabricantes de medicamentos para doenças raras com ética e transparência, aproximado indústria, serviços de saúde e gestores.",
+        "carouselTitle3": "Advocacia em doenças raras",
+        "carouselText3": "Atuamos ao lado de associações de pacientes, especialistas e gestores para fortalecer a pauta das doenças raras em políticas públicas e protocolos de acesso.",
+        "carouselTitle4": "Educação médica",
+        "carouselText4": "Desenvolvemos jornadas, workshops e conteúdos sobre doenças raras, apoiando equipes de saúde na atualização contínua e no diagnóstico mais precoce.",
         "representationCard": "Representação",
+        "representationCardText": "Atuamos como representantes de fabricantes de medicamentos para doenças raras, conectando indústria, serviços de saúde e gestores com ética, transparência e foco no acesso responsável ao paciente.",
         "educationCard": "Educação médica",
+        "educationCardText": "Desenvolvemos ações de educação médica contínua, com conteúdos, workshops e jornadas formativas voltadas ao diagnóstico precoce, uso racional de terapias e atualização científica.",
         "advocacyCard": "Advocacia",
+        "advocacyCardText": "Trabalhamos junto a associações de pacientes, especialistas e formuladores de políticas públicas para fortalecer a pauta das doenças raras e ampliar o acesso sustentável aos tratamentos.",
         "accessCard": "Consultoria de Acesso",
-        "seeMoreButton": "Veja mais",
+        "accessCardText": "Desenhamos e conduzimos estratégias completas de acesso a medicamentos, apoiando processos regulatórios, operacionais e decisórios com foco na jornada do paciente e na viabilidade do tratamento.",
+        "seeMoreButton": "Passe o mouse para ver mais.",
         "contactButton": "Entre em Contato"
     },
     "activity": {
         "title": "Áreas de Atuação",
         "industriesCard": "Indústrias Representadas",
+        "industriesCardText": "Atuamos com representantes de indústrias farmacêuticas focadas em medicamentos para doenças raras, conectando inovação e acesso com ética, transparência e responsabilidade.",
         "partnersCard": "Parceiros Institucionais",
+        "partnersCardText": "Construímos parcerias estratégicas com associações de pacientes, especialistas e formuladores de políticas públicas para fortalecer a pauta das doenças raras e ampliar o acesso sustentável aos tratamentos.",
         "colaborationCard": "Rede de Colaboração",
+        "colaborationCardText": "Desenvolvemos uma rede colaborativa com profissionais de saúde, gestores e instituições para promover o diagnóstico precoce, uso racional de terapias e atualização científica em doenças raras.",
         "partnersTitle": "Parceiros",
         "carouselTitle1": "Parceiro",
         "carouselText1": "Lorem ipsum dolor sit amet",
         "heroCTA": "Quer ser nosso parceiro?\nAcesse o link abaixo e preencha o formulário!",
         "heroCTAButton": "Entre em Contato!",
         "missionCardTitle": "Missão",
+        "missionCardText": "Humanizar a jornada de acesso à inovação em saúde, oferecendo soluções completas para viabilizar terapias com responsabilidade, excelência, sensibilidade, e foco no acolhimento ao paciente.",
         "visionCardTitle": "Visão",
-        "valuesCardTitle": "Valores"
+        "visionCardText": "Construir um cenário em que as necessidades médicas não atendidas se tornem raras, conectando a inovação ao paciente de forma cada vez mais eficiente, segura e sustentável, no Brasil.",
+        "valuesCardTitle": "Valores",
+        "valuesCardItem1": "Humanização e acolhimento ao paciente.",
+        "valuesCardItem2": "Responsabilidade, excelência e sensibilidade.",
+        "valuesCardItem3": "Ética e compromisso com impacto real na vida das pessoas."
     },
     "patientsAndFamily": {
         "title": "Para Pacientes e Famílias",
@@ -73,7 +91,7 @@
         "guideStep3Text": "Forneça a prescrição médica e os documentos necessários para iniciar o processo.",
         "guideStep4": "Passo 4.",
         "guideStep4Text": "Acompanhe o status do seu pedido conosco até a entrega do medicamento.",
-        "guideHelp": "Precisa de ajuda?",
+        "guideHelp": "🔍Precisa de ajuda?",
         "historyTitle": "História",
         "testimonialTitle": "Depoimentos",
         "testimonialText": "\"A GENQUEST foi fundamental para que eu pudesse acessar o tratamento que precisava. A equipe foi extremamente atenciosa e eficiente.\"",
@@ -86,9 +104,9 @@
     "aboutUs": {
         "title": "Sobre Nós",
         "heroTitle": "Humanização do acesso à inovação à saúde",
-        "heroText": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "heroText": "A Genquest nasceu com um propósito claro e inegociável: humanizar o acesso à inovação em saúde, atuando com responsabilidade, excelência técnica e profunda sensibilidade às realidades de cada paciente. Mais do que viabilizar tratamentos, buscamos transformar jornadas que, muitas vezes, são marcadas por incerteza, burocracia e fragilidade emocional.\nNosso trabalho é guiado pelo acolhimento e pela escuta ativa. Acompanhamos cada etapa do processo de acesso a medicamentos de forma individualizada, entendendo que cada caso é único e exige atenção dedicada, clareza de informações e condução segura. Atuamos como um elo de confiança entre pacientes, profissionais de saúde, indústria e instituições, garantindo que decisões técnicas estejam sempre alinhadas ao cuidado real com as pessoas.\nCom uma atuação ética e transparente, a Genquest combina conhecimento regulatório, visão estratégica e compromisso humano para tornar a inovação em saúde mais acessível, eficiente e sustentável. Nosso foco está em assegurar que o avanço científico chegue a quem realmente precisa, no tempo certo, com respeito, dignidade e impacto positivo na vida dos pacientes e de suas famílias.",
         "methodologyTitle": "O método Genquest",
-        "methodologyText": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "methodologyText": "O Método Genquest começa com a identificação da necessidade de um tratamento importado, segue com a prescrição médica e, então, a empresa assume toda a condução do processo até que o paciente receba o medicamento e possa iniciar seus cuidados.\nAo longo dessa jornada, realizamos mapeamento de demandas, monitoramento do acesso e acompanhamento individualizado, garantindo um caminho mais seguro e organizado para cada paciente."
     },
     "privacyPolicy": {
         "title": "Política de Privacidade"

@@ -15,7 +15,13 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
                     <div className="lg:w-3/4 mx-auto p-8 bg-(--main-color) rounded-xl">
                         <h2 className="mb-4 text-2xl secondary-font text-(--accent-color) text-center">{dict.aboutUs.heroTitle}</h2>
 
-                        <p className="text-white">{dict.aboutUs.heroText}</p>
+                        <p className="text-white">{dict.aboutUs.heroText.split("\n").map((text, index) => (
+                            <span key={index}>
+                                {text}
+                                <br />
+                                <br />
+                            </span>
+                        ))}</p>
                     </div>
 				</div>
 			</section>

@@ -31,7 +31,7 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 					<Carousel>
 						<div className="flex flex-col md:flex-row items-center gap-8 min-w-full px-4">
 							<div>
-								<h2 className="mb-4 secondary-font text-4xl font-semibold">{dict.portfolio.carouselTitle1} 1</h2>
+								<h2 className="mb-4 secondary-font text-4xl font-semibold">{dict.portfolio.carouselTitle1}</h2>
 								<p>{dict.portfolio.carouselText1}</p>
 							</div>
 
@@ -42,8 +42,8 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 
 						<div className="flex flex-col md:flex-row items-center gap-8 min-w-full px-4">
 							<div>
-								<h2 className="mb-4 secondary-font text-4xl font-semibold">{dict.portfolio.carouselTitle1} 2</h2>
-								<p>{dict.portfolio.carouselText1}</p>
+								<h2 className="mb-4 secondary-font text-4xl font-semibold">{dict.portfolio.carouselTitle2}</h2>
+								<p>{dict.portfolio.carouselText2}</p>
 							</div>
 
 							<div>
@@ -53,8 +53,19 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 
 						<div className="flex flex-col md:flex-row items-center gap-8 min-w-full px-4">
 							<div>
-								<h2 className="mb-4 secondary-font text-4xl font-semibold">{dict.portfolio.carouselTitle1} 3</h2>
-								<p>{dict.portfolio.carouselText1}</p>
+								<h2 className="mb-4 secondary-font text-4xl font-semibold">{dict.portfolio.carouselTitle3}</h2>
+								<p>{dict.portfolio.carouselText3}</p>
+							</div>
+
+							<div>
+								<Image src="/assets/images/placeholderPortfolioCarousel1.png" alt="Solução 1" width={600} height={400} />
+							</div>
+						</div>
+
+                        <div className="flex flex-col md:flex-row items-center gap-8 min-w-full px-4">
+							<div>
+								<h2 className="mb-4 secondary-font text-4xl font-semibold">{dict.portfolio.carouselTitle4}</h2>
+								<p>{dict.portfolio.carouselText4}</p>
 							</div>
 
 							<div>
@@ -70,18 +81,18 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 					<div className="group w-96 h-fit bg-(--main-color) rounded-xl text-(--accent-color)">
 						<div className="flex gap-4 p-4 sm:p-6">
 							<div className="flex items-center w-20">
-								<Image src="/assets/icons/representation.png" alt="Solução 1" width={80} height={80} className="w-full" />
+								<Image src="/assets/icons/representation.png" alt={dict.portfolio.representationCard} width={80} height={80} className="w-full" />
 							</div>
 
 							<div>
-								<h2 className="mb-4 text-xl secondary-font">{dict.portfolio.accessCard}</h2>
+								<h2 className="mb-4 text-xl secondary-font">{dict.portfolio.representationCard}</h2>
                                 <p className="w-fit py-2 px-4 bg-(--accent-color) text-(--main-color) rounded-full">{dict.portfolio.seeMoreButton}</p>
 							</div>
 						</div>
 
 						<div className="grid overflow-hidden transition-all duration-300 ease-out grid-rows-[0fr] opacity-0 group-hover:grid-rows-[1fr] group-hover:opacity-100">
 							<div className="overflow-hidden px-4 pb-4 sm:px-6">
-								<p>Lorem ipsum dolor sit amet consectetur.</p>
+								<p>{dict.portfolio.representationCardText}</p>
 							</div>
 						</div>
 					</div>
@@ -89,18 +100,18 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 					<div className="group w-96 h-fit bg-(--main-color) rounded-xl text-(--accent-color)">
 						<div className="flex gap-4 p-4 sm:p-6">
 							<div className="flex items-center w-20">
-								<Image src="/assets/icons/representation.png" alt="Solução 1" width={80} height={80} className="w-full" />
+								<Image src="/assets/icons/medicEducation.png" alt={dict.portfolio.educationCard} width={80} height={80} className="w-full" />
 							</div>
 
 							<div>
-								<h2 className="mb-4 text-xl secondary-font">{dict.portfolio.accessCard}</h2>
+								<h2 className="mb-4 text-xl secondary-font">{dict.portfolio.educationCard}</h2>
                                 <p className="w-fit py-2 px-4 bg-(--accent-color) text-(--main-color) rounded-full">{dict.portfolio.seeMoreButton}</p>
 							</div>
 						</div>
 
 						<div className="grid overflow-hidden transition-all duration-300 ease-out grid-rows-[0fr] opacity-0 group-hover:grid-rows-[1fr] group-hover:opacity-100">
 							<div className="overflow-hidden px-4 pb-4 sm:px-6">
-								<p>Lorem ipsum dolor sit amet consectetur.</p>
+								<p>{dict.portfolio.educationCardText}</p>
 							</div>
 						</div>
 					</div>
@@ -108,18 +119,18 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 					<div className="group w-96 h-fit bg-(--main-color) rounded-xl text-(--accent-color)">
 						<div className="flex gap-4 p-4 sm:p-6">
 							<div className="flex items-center w-20">
-								<Image src="/assets/icons/representation.png" alt="Solução 1" width={80} height={80} className="w-full" />
+								<Image src="/assets/icons/advocacy.png" alt={dict.portfolio.advocacyCard} width={80} height={80} className="w-full" />
 							</div>
 
 							<div>
-								<h2 className="mb-4 text-xl secondary-font">{dict.portfolio.accessCard}</h2>
+								<h2 className="mb-4 text-xl secondary-font">{dict.portfolio.advocacyCard}</h2>
                                 <p className="w-fit py-2 px-4 bg-(--accent-color) text-(--main-color) rounded-full">{dict.portfolio.seeMoreButton}</p>
 							</div>
 						</div>
 
 						<div className="grid overflow-hidden transition-all duration-300 ease-out grid-rows-[0fr] opacity-0 group-hover:grid-rows-[1fr] group-hover:opacity-100">
 							<div className="overflow-hidden px-4 pb-4 sm:px-6">
-								<p>Lorem ipsum dolor sit amet consectetur.</p>
+								<p>{dict.portfolio.advocacyCardText}</p>
 							</div>
 						</div>
 					</div>
@@ -127,7 +138,7 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 					<div className="group w-96 h-fit bg-(--main-color) rounded-xl text-(--accent-color)">
 						<div className="flex gap-4 p-4 sm:p-6">
 							<div className="flex items-center w-20">
-								<Image src="/assets/icons/representation.png" alt="Solução 1" width={80} height={80} className="w-full" />
+								<Image src="/assets/icons/consulting.png" alt={dict.portfolio.accessCard} width={80} height={80} className="w-full" />
 							</div>
 
 							<div>
@@ -138,7 +149,7 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 
 						<div className="grid overflow-hidden transition-all duration-300 ease-out grid-rows-[0fr] opacity-0 group-hover:grid-rows-[1fr] group-hover:opacity-100">
 							<div className="overflow-hidden px-4 pb-4 sm:px-6">
-								<p>Lorem ipsum dolor sit amet consectetur.</p>
+								<p>{dict.portfolio.accessCardText}</p>
 							</div>
 						</div>
 					</div>

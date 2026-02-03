@@ -31,8 +31,8 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 							<div className="flex flex-col items-center w-60">
 								<div className="flex items-center justify-center w-8 h-8 mb-4 bg-(--secondary-color) rounded-full">2</div>
 
-								<h3 className="mb-4">{dict.patientsAndFamily.guideStep1}</h3>
-								<p className="text-center">{dict.patientsAndFamily.guideStep1Text}</p>
+								<h3 className="mb-4">{dict.patientsAndFamily.guideStep2}</h3>
+								<p className="text-center">{dict.patientsAndFamily.guideStep2Text}</p>
 							</div>
 
 							<div className="flex items-center w-8">
@@ -42,8 +42,8 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 							<div className="flex flex-col items-center w-60">
 								<div className="flex items-center justify-center w-8 h-8 mb-4 bg-(--secondary-color) rounded-full">3</div>
 
-								<h3 className="mb-4">{dict.patientsAndFamily.guideStep1}</h3>
-								<p className="text-center">{dict.patientsAndFamily.guideStep1Text}</p>
+								<h3 className="mb-4">{dict.patientsAndFamily.guideStep3}</h3>
+								<p className="text-center">{dict.patientsAndFamily.guideStep3Text}</p>
 							</div>
 
 							<div className="flex items-center w-8">
@@ -53,8 +53,8 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 							<div className="flex flex-col items-center w-60">
 								<div className="flex items-center justify-center w-8 h-8 mb-4 bg-(--secondary-color) rounded-full">4</div>
 
-								<h3 className="mb-4">{dict.patientsAndFamily.guideStep1}</h3>
-								<p className="text-center">{dict.patientsAndFamily.guideStep1Text}</p>
+								<h3 className="mb-4">{dict.patientsAndFamily.guideStep4}</h3>
+								<p className="text-center">{dict.patientsAndFamily.guideStep4Text}</p>
 							</div>
 						</div>
 					</div>

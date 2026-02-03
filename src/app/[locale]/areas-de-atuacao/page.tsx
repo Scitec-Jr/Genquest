@@ -18,21 +18,21 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 							<Image src="/assets/images/industries.png" alt="Áreas de Atuação" width={400} height={200} className="w-full mb-4" />
 
 							<h2 className="px-4">{dict.activity.industriesCard}</h2>
-							<p className="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sapiente asperiores, maxime ab cupiditate animi fuga eum aut quis assumenda autem quia quos deleniti est, laboriosam vitae nobis amet suscipit quasi iusto accusamus quaerat sequi. Reprehenderit architecto ipsam eius explicabo atque voluptas quidem in inventore, vel necessitatibus sed? Quisquam, ex?</p>
+							<p className="px-4">{dict.activity.industriesCardText}</p>
 						</div>
 
 						<div className="flex flex-col w-80 pb-4 bg-(--main-color) text-(--accent-color) rounded-4xl">
 							<Image src="/assets/images/partners.png" alt="Áreas de Atuação" width={400} height={200} className="w-full mb-4" />
 
 							<h2 className="px-4">{dict.activity.partnersCard}</h2>
-							<p className="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sapiente asperiores, maxime ab cupiditate animi fuga eum aut quis assumenda autem quia quos deleniti est, laboriosam vitae nobis amet suscipit quasi iusto accusamus quaerat sequi. Reprehenderit architecto ipsam eius explicabo atque voluptas quidem in inventore, vel necessitatibus sed? Quisquam, ex?</p>
+							<p className="px-4">{dict.activity.partnersCardText}</p>
 						</div>
 
 						<div className="flex flex-col w-80 pb-4 bg-(--main-color) text-(--accent-color) rounded-4xl">
 							<Image src="/assets/images/colaboration.png" alt="Áreas de Atuação" width={400} height={200} className="w-full mb-4" />
 
 							<h2 className="px-4">{dict.activity.colaborationCard}</h2>
-							<p className="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sapiente asperiores, maxime ab cupiditate animi fuga eum aut quis assumenda autem quia quos deleniti est, laboriosam vitae nobis amet suscipit quasi iusto accusamus quaerat sequi. Reprehenderit architecto ipsam eius explicabo atque voluptas quidem in inventore, vel necessitatibus sed? Quisquam, ex?</p>
+							<p className="px-4">{dict.activity.colaborationCardText}</p>
 						</div>
 					</div>
 				</div>
@@ -105,30 +105,32 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
                         <div className="flex items-center justify-between mb-4">
                             <h2 className="text-3xl secondary-font">{dict.activity.missionCardTitle}</h2>
 
-                            <Image src="/assets/icons/mission.png" alt="Missão" width={40} height={40} />
+                            <Image src="/assets/icons/mission.png" alt={dict.activity.missionCardTitle} width={40} height={40} />
                         </div>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ex est debitis odio. Vero distinctio, numquam libero id minima deserunt, cumque et animi vitae quisquam aut veritatis unde dolores velit beatae nam. Debitis illo ducimus eum, tenetur distinctio porro ab commodi ad, reiciendis, eligendi officia perspiciatis quisquam itaque voluptatum pariatur!</p>
+                        <p>{dict.activity.missionCardText}</p>
                     </div>
 
                     <div className="w-68 p-4 bg-white rounded-4xl">
                         <div className="flex items-center justify-between mb-4">
                             <h2 className="text-3xl secondary-font">{dict.activity.visionCardTitle}</h2>
 
-                            <Image src="/assets/icons/mission.png" alt="Missão" width={40} height={40} />
+                            <Image src="/assets/icons/vision.png" alt={dict.activity.visionCardTitle} width={40} height={40} />
                         </div>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ex est debitis odio. Vero distinctio, numquam libero id minima deserunt, cumque et animi vitae quisquam aut veritatis unde dolores velit beatae nam. Debitis illo ducimus eum, tenetur distinctio porro ab commodi ad, reiciendis, eligendi officia perspiciatis quisquam itaque voluptatum pariatur!</p>
+                        <p>{dict.activity.visionCardText}</p>
                     </div>
 
                     <div className="w-68 p-4 bg-white rounded-4xl">
                         <div className="flex items-center justify-between mb-4">
                             <h2 className="text-3xl secondary-font">{dict.activity.valuesCardTitle}</h2>
 
-                            <Image src="/assets/icons/mission.png" alt="Missão" width={40} height={40} />
+                            <Image src="/assets/icons/values.png" alt={dict.activity.valuesCardTitle}    width={40} height={40} />
                         </div>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ex est debitis odio. Vero distinctio, numquam libero id minima deserunt, cumque et animi vitae quisquam aut veritatis unde dolores velit beatae nam. Debitis illo ducimus eum, tenetur distinctio porro ab commodi ad, reiciendis, eligendi officia perspiciatis quisquam itaque voluptatum pariatur!</p>
+                        <p>{dict.activity.valuesCardItem1}</p>
+                        <p>{dict.activity.valuesCardItem2}</p>
+                        <p>{dict.activity.valuesCardItem3}</p>
                     </div>
                 </div>
             </section>
