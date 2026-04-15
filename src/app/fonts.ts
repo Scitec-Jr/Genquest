@@ -1,16 +1,10 @@
-import localFont from "next/font/local"
-import { Barlow_Semi_Condensed } from "next/font/google";
+import { Barlow_Semi_Condensed, Orbitron } from "next/font/google";
 
-export const eirian = localFont({
-	src: [
-		{
-			path: "../../public/fonts/Eirian-Regular.ttf",
-			weight: "400",
-			style: "normal",
-		}
-	],
-	display: "swap",
-	variable: "--font-eirian",
+export const orbitron = Orbitron({
+  subsets: ["latin"],
+  weight: ["400","500","600","700"],
+  display: "swap",
+  variable: "--font-orbitron",
 });
 
 export const barlow = Barlow_Semi_Condensed({

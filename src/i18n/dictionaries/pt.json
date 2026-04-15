@@ -1,14 +1,9 @@
 {
 	"header": {
 		"home": "Home",
-		"servicesAndPerformance": "Serviços e Atuação",
-        "portfolio": "Portfólio de soluções",
-        "performance": "Áreas de atuação",
-        "informations": "Nossas Informações",
-        "about": "Sobre Nós",
-        "articles": "Artigos e Notícias",
-        "patientsAndFamily": "Para Pacientes e Famílias",
-        "contact": "Contato"
+		"services": "Serviços",
+        "integration": "Integração de Ecossistema",
+        "about": "Sobre Nós"
 	},
 	"footer": {
 		"politcs": "Políticas",
@@ -22,12 +17,13 @@
         "fastAccess": "Acesso Rápido",
         "solutions": "Soluções e Serviços",
         "access": "Jornada de Acesso",
-        "results": "Casos & Resultados"
+        "results": "Casos & Resultados",
+        "slogan": "Humanizando a jornada de acesso à inovação em saúde.",
+        "contact": "Contato"
 	},
     "home": {
-		"slogan": "Humanizando de acesso a medicamentos",
-        "clientButton": "Quero ser cliente",
-        "partnerButton": "Quero ser parceiro",
+		"slogan": "Humanizando a jornada de acesso à inovação em saúde.",
+        "contactButton": "Entre em Contato",
         "heroInovationTitle": "Inovação e excelência:",
         "heroInovationText": "\"Atuamos como o elo de confiança entre a ciência e o acesso.\"",
         "heroReceptionTitle": "Acolhimento e esperança:",
@@ -36,7 +32,7 @@
         "heroEthicText": "\"Compromisso com a transparência e sustentabilidade.\""
 	},
     "portfolio": {
-        "title": "Portfólio de Soluções",
+        "title": "Soluções",
         "heroTitle": "Mais do que consultoria. Um elo de confiança em saúde.",
         "heroText": "Mais do que uma empresa de consultoria ou representação farmacêutica, a GENQUEST é um elo de confiança entre ciência e pacientes. Nosso propósito é humanizar a jornada de acesso a medicamentos para doenças raras, conectando inovação e empatia em cada interação.",
         "carouselTitle1": "Consultoria de acesso",

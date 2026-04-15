@@ -8,6 +8,7 @@
   --secondary-color: #6272ae;
   --accent-color: #EBC042;
   --secondary-accent-color: #A87B05;
+  --dark-color: #041422;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 }
 
 .secondary-font {
-    font-family: var(--font-eirian), 'Times New Roman', Times, serif;
+    font-family: var(--font-orbitron), 'Times New Roman', Times, serif;
 }
 
 img {

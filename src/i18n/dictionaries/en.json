@@ -1,14 +1,9 @@
 {
   "header": {
     "home": "Home",
-    "servicesAndPerformance": "Services and Operations",
-    "portfolio": "Solutions Portfolio",
-    "performance": "Areas of Expertise",
-    "informations": "Our Information",
-    "about": "About Us",
-    "articles": "Articles and News",
-    "patientsAndFamily": "For Patients and Families",
-    "contact": "Contact"
+    "services": "Services",
+    "integration": "Integration Ecosystem",
+    "about": "About Us"
   },
   "footer": {
     "politcs": "Policies",
@@ -22,12 +17,13 @@
     "fastAccess": "Quick Access",
     "solutions": "Solutions and Services",
     "access": "Access Journey",
-    "results": "Cases & Results"
+    "results": "Cases & Results",
+    "slogan": "Humanizing the journey of access to innovation in healthcare.",
+    "contact": "Contact"
   },
   "home": {
-    "slogan": "Humanizing access to medications",
-    "clientButton": "I want to be a client",
-    "partnerButton": "I want to be a partner",
+    "slogan": "Humanizing the journey of access to innovation in healthcare.",
+    "contactButton": "Contact Us",
     "heroInovationTitle": "Innovation and excellence:",
     "heroInovationText": "\"We act as the trusted link between science and access.\"",
     "heroReceptionTitle": "Care and hope:",

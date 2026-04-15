@@ -4,28 +4,29 @@ import Link from "next/link";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function Footer({ dict }: any) {
 	return (
-		<footer className="py-4 px-4 md:px-8 lg:px-16 bg-(--main-color) text-(--accent-color) text-sm">
+		<footer className="relative py-4 px-4 md:px-8 lg:px-16 bg-(--main-color) text-(--accent-color) text-sm z-20">
 			<div className="flex flex-col-reverse sm:flex-row items-center justify-between gap-4 max-w-360 mx-auto">
 				<div className="flex flex-col items-center">
 					<Image src="/assets/global/logo2.png" alt="Genquest" width={150} height={150} />
 
-					<div className="flex gap-4">
-						<a href="" className="inline">
-                            <Image src="/assets/global/twitter.png" alt="Twitter(X)" width={20} height={20} />
-                        </a>
-						<a href="">
-                            <Image src="/assets/global/instagram.png" alt="Instagram" width={20} height={20} />
-                        </a>
-						<a href="">
-                            <Image src="/assets/global/youtube.png" alt="Youtube" width={20} height={20} />
-                        </a>
-						<a href="">
-                            <Image src="/assets/global/linkedin.png" alt="Linkedin" width={20} height={20} />
-                        </a>
+					<div className="flex gap-4 w-3/4 text-center">
+						<p>{dict.slogan}</p>
 					</div>
 				</div>
 
 				<div className="flex flex-col min-[448px]:flex-row gap-4 md:gap-8">
+                    <div className="flex flex-col gap-2">
+						<h2 className="font-bold">{dict.contact}</h2>
+						<a href="mailto:contato@genquest.com.br">
+                            <Image src="/assets/icons/mail.png" alt="Email" width={16} height={16} className="inline-block mr-1" />
+                            contato@genquest.com.br
+                        </a>
+						<a href="tel:+5511963767888">
+                            <Image src="/assets/icons/whatsapp.png" alt="Phone" width={16} height={16} className="inline-block mr-1" />
+                            +55 (11) 96376-7888
+                        </a>
+					</div>
+
 					<div className="flex flex-col gap-2">
 						<h2 className="font-bold">{dict.politcs}</h2>
 						<Link href="/politica-de-privacidade">{dict.privacyPolicy}</Link>
