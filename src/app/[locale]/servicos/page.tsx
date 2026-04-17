@@ -22,7 +22,7 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 					</div>
 
 					<div className="relative flex flex-col justify-center flex-1 p-4 shadow-[4px_4px_15px_20px_white] z-10">
-						<p className="mb-4 text-xl">A GENQUEST é um elo de confiança entre ciência e pacientes. Nosso propósito é humanizar a jornada de acesso a medicamentos para doenças raras, conectando inovação e empatia em cada interação.</p>
+						<p className="mb-4 text-xl">{dict.services.heroText}</p>
 					</div>
 				</div>
 			</section>
@@ -43,38 +43,38 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 
 						<div className="flex flex-col md:flex-row items-center gap-8 min-w-full px-4 text-center">
 							<div>
-								<h2 className="mb-4 secondary-font text-4xl font-semibold">Suporte em Comércio Internacional</h2>
-								<p>Acesso pleno e regulado a terapias por meio da rota de importação no Brasil.</p>
+								<h2 className="mb-4 secondary-font text-4xl font-semibold">{dict.services.carouselTitle2}</h2>
+								<p>{dict.services.carouselText2}</p>
 							</div>
 
 							<div className="text-left">
 								<ol className="list-decimal">
-                                    <li>Para Fabricantes/Exportadores:</li>
+                                    <li>{dict.services.manufacturersTitle}</li>
                                     <ul className="mb-4 ps-4 list-disc">
-                                        <li>Monitoramento da jornada de acesso</li>
-                                        <li>Mapeamento da demanda</li>
-                                        <li>Acompanhamento individualizado de processos</li>
+                                        <li>{dict.services.manufacturersItem1}</li>
+                                        <li>{dict.services.manufacturersItem2}</li>
+                                        <li>{dict.services.manufacturersItem3}</li>
                                     </ul>
 
-                                    <li>Para importadores:</li>
+                                    <li>{dict.services.importersTitle}</li>
                                     <ul className="ps-4 list-disc">
-                                        <li>Assessoria em comércio internacional</li>
-                                        <li>Gestão documental</li>
-                                        <li>Coordenação de desembaraço</li>
-                                        <li>Garantia de qualidade até a entrega</li>
+                                        <li>{dict.services.importersItem1}</li>
+                                        <li>{dict.services.importersItem2}</li>
+                                        <li>{dict.services.importersItem3}</li>
+                                        <li>{dict.services.importersItem4}</li>
                                     </ul>
                                 </ol>
 							</div>
 						</div>
 
-                        <div className="flex flex-col md:flex-row items-center gap-8 min-w-full px-4 text-center">
+                        <div className="flex flex-col md:flex-row items-center gap-8 min-w-full px-4 text-left">
 							<div>
-								<h2 className="mb-4 secondary-font text-4xl font-semibold">Soft Landing & Estratégia de Entrada</h2>
-								<p>Framework modular desenvolvido especificamente para terapias de doenças raras que ingressam no Brasil.</p>
+								<h2 className="mb-4 secondary-font text-4xl font-semibold">{dict.services.carouselTitle3}</h2>
+								<p>{dict.services.carouselText3}</p>
                                 <ol className="list-decimal ps-4">
-                                    <li>Avaliação do Modelo de Entrada</li>
-                                    <li>Configuraçã Operacional</li>
-                                    <li>Implementação</li>
+                                    <li>{dict.services.softLandingItem1}</li>
+                                    <li>{dict.services.softLandingItem2}</li>
+                                    <li>{dict.services.softLandingItem3}</li>
                                 </ol>
 							</div>
 
@@ -87,27 +87,27 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 			</section>
 
 			<section className="relative py-8 px-4 md:px-8 bg-white z-20">
-				<h2 className="mb-4 text-4xl secondary-font text-(--accent-color) text-center">Participe da nossa pesquisa</h2>
+			<h2 className="mb-4 text-4xl secondary-font text-(--accent-color) text-center">{dict.services.researchTitle}</h2>
 
-                <Image src="/assets/images/qrcode.png" alt="Pesquisa" width={200} height={200} className="p-4 float-left" />
+                <Image src="/assets/images/qrcode.png" alt={dict.services.researchAlt} width={200} height={200} className="p-4 float-left" />
 
-                <p>A Genquest está conduzindo uma pesquisa estruturada para compreender os principais desafios enfrentados por associações de pacientes, profissionais de saúde, pagadores e instituições na importação de medicamentos para doenças raras no Brasil.</p>
+                <p>{dict.services.researchText1}</p>
                 <br />
-                <p>O objetivo é dar voz às experiências reais do setor e gerar insumos concretos para o desenvolvimento de soluções mais humanas, transparentes e eficientes para o acesso a terapias raras.</p>
+                <p>{dict.services.researchText2}</p>
                 <br />
-                <p>A pesquisa é rápida, confidencial e não exige identificação obrigatória. As respostas serão utilizadas de forma agregada e poderão apoiar análises setoriais e materiais institucionais da Genquest.</p>
+                <p>{dict.services.researchText3}</p>
                 <br />
-                <p>👉 Acesse a pesquisa aqui: https://forms.gle/zoBCy9G6Gvpa3JYF6</p>
+                <p>{dict.services.researchLink}</p>
                 <br />
-                <p>Sua contribuição é extremamente valiosa para fortalecer o debate e ajudar a melhorar a jornada de acesso no Brasil.</p>
-			</section>
+                <p>{dict.services.researchText4}</p>
+            </section>
 
             <section className="bg-(--accent-color)">
 				<div className="flex flex-col md:flex-row">
 					<div className="relative flex flex-col justify-center flex-1 p-4 shadow-[4px_4px_15px_20px_var(--accent-color)] z-10">
-                        <h2 className="mb-4 text-4xl secondary-font text-(--main-color)">Pronto para levar sua terapia inovadora aos pacientes brasileiros?</h2>
+                        <h2 className="mb-4 text-4xl secondary-font text-(--main-color)">{dict.services.ctaTitle}</h2>
 
-						<p className="mb-4 text-xl">Trabalhe com a Genquest - a única empresa que oferece soluções reguladas e integradas de ponta a ponta para medicamentos importados no Brasil.</p>
+					<p className="mb-4 text-xl">{dict.services.ctaText}</p>
 					</div>
 
 					<div className="flex-1">
