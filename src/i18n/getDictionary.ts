@@ -1,11 +1,14 @@
 import "server-only";
 import type { Locale } from "./config";
 
-const dictionaries = {
-	pt: () => import("./dictionaries/pt.json").then((lang) => lang.default),
-	en: () => import("./dictionaries/en.json").then((lang) => lang.default),
+// usa o JSON como fonte de tipo
+type Dictionary = typeof import("./dictionaries/en.json");
+
+const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
+  pt: () => import("./dictionaries/pt.json").then((lang) => lang.default),
+  en: () => import("./dictionaries/en.json").then((lang) => lang.default),
 };
 
-export async function getDictionary(locale: Locale) {
-	return await dictionaries[locale]();
+export async function getDictionary(locale: Locale): Promise<Dictionary> {
+  return dictionaries[locale]();
 }

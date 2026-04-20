@@ -1,48 +1,48 @@
 import { NextRequest, NextResponse } from "next/server";
-import { locales, defaultLocale } from "@/i18n/config";
+import { locales, defaultLocale, type Locale } from "@/i18n/config";
 
-function getLocale(request: NextRequest): string {
-	const acceptLanguage = request.headers.get("accept-language");
-	if (!acceptLanguage) return defaultLocale;
+function getLocale(request: NextRequest): Locale {
+  const acceptLanguage = request.headers.get("accept-language");
+  if (!acceptLanguage) return defaultLocale;
 
-	const preferred = acceptLanguage
-		.split(",")
-		.map((lang) => lang.split(";")[0].toLowerCase());
+  const preferred = acceptLanguage
+    .split(",")
+    .map((lang) => lang.split(";")[0].toLowerCase());
 
-	for (const lang of preferred) {
-		const baseLang = lang.split("-")[0];
-		if (locales.includes(baseLang as "pt" | "en")) {
-			return baseLang;
-		}
-	}
+  for (const lang of preferred) {
+    const baseLang = lang.split("-")[0];
+    if (locales.includes(baseLang as Locale)) {
+      return baseLang as Locale;
+    }
+  }
 
-	return defaultLocale;
+  return defaultLocale;
 }
 
 export default function proxy(request: NextRequest) {
-	const { pathname } = request.nextUrl;
+  const { pathname } = request.nextUrl;
 
-	if (
-		pathname.startsWith("/_next") ||
-		pathname.startsWith("/api") ||
-		pathname.includes(".")
-	) {
-		return NextResponse.next();
-	}
+  if (
+    pathname.startsWith("/_next") ||
+    pathname.startsWith("/api") ||
+    pathname.includes(".")
+  ) {
+    return NextResponse.next();
+  }
 
-	const hasLocale = locales.some(
-		(locale) =>
-			pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
-	);
+  const hasLocale = locales.some(
+    (locale) =>
+      pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
+  );
 
-	if (hasLocale) {
-		return NextResponse.next();
-	}
+  if (hasLocale) {
+    return NextResponse.next();
+  }
 
-	const locale = getLocale(request);
+  const locale = getLocale(request);
 
-	const url = request.nextUrl.clone();
-	url.pathname = `/${locale}${pathname}`;
+  const url = request.nextUrl.clone();
+  url.pathname = `/${locale}${pathname}`;
 
-	return NextResponse.redirect(url);
+  return NextResponse.redirect(url);
 }

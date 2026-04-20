@@ -1,17 +1,32 @@
 import { getDictionary } from "@/i18n/getDictionary";
-import type { Locale } from "@/i18n/config";
+import { locales, defaultLocale, type Locale } from "@/i18n/config";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
-export default async function LocaleLayout({ children, params }: { children: React.ReactNode; params: Promise<{ locale: Locale }> }) {
-	const { locale } = await params;
-	const dict = await getDictionary(locale);
+function isValidLocale(locale: string): locale is Locale {
+  return locales.includes(locale as Locale);
+}
 
-	return (
-		<>
-            <Header locale={locale} dict={dict.header} />
-			{children}
-			<Footer dict={dict.footer} />
-		</>
-	);
+export default async function LocaleLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale: rawLocale } = await params;
+
+  const locale = isValidLocale(rawLocale)
+    ? rawLocale
+    : defaultLocale;
+
+  const dict = await getDictionary(locale);
+
+  return (
+    <>
+      <Header locale={locale} dict={dict.header} />
+      {children}
+      <Footer dict={dict.footer} />
+    </>
+  );
 }
