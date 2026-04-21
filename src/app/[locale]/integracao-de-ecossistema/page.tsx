@@ -11,7 +11,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 		<main>
 			<section className="bg-(--main-color)">
 				<div className="flex flex-col md:flex-row">
-					<div className="relative flex flex-col justify-center flex-1 p-4 shadow-[4px_4px_15px_20px_var(--main-color)] z-10">
+					<div className="relative flex flex-col justify-center flex-1 p-4 md:ps-8 lg:ps-16 shadow-[4px_4px_15px_20px_var(--main-color)] z-10">
 						<h1 className="mb-4 text3xl md:text-5xl text-(--accent-color) secondary-font">{dict.integration.heroTitle}</h1>
 
 					<p className="mb-4 text-xl text-white">{dict.integration.heroText}</p>
@@ -29,7 +29,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 				</div>
 			</section>
 
-			<section className="relative py-8 px-4 md:px-8 bg-(--accent-color) z-20">
+			<section className="relative py-8 px-4 md:px-8 lg:px-16 bg-(--accent-color) z-20">
 				<div className="max-w-360 mx-auto">
 					<h2 className="mb-8 text-4xl secondary-font text-white text-center">{dict.patientsAndFamily.testimonialTitle}</h2>
 
@@ -77,7 +77,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 				</div>
 			</section>
 
-			<section className="relative py-8 px-4 md:px-8 bg-white z-20">
+			<section className="relative py-8 px-4 md:px-8 lg:px-16 bg-white z-20">
 				<div className="max-w-360 mx-auto">
 					<h2 className="mb-8 text-4xl secondary-font text-(--accent-color) text-center">{dict.integration.partnersTitle}</h2>
 
@@ -105,7 +105,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 
 			<section className="bg-(--accent-color)">
 				<div className="flex flex-col md:flex-row">
-					<div className="relative flex flex-col justify-center flex-1 px-8 py-4 shadow-[4px_4px_15px_20px_var(--accent-color)] z-10">
+					<div className="relative flex flex-col justify-center flex-1 px-4 md:px-8 lg:px-16 py-4 shadow-[4px_4px_15px_20px_var(--accent-color)] z-10">
 						<h1 className="mb-4 text-3xl text-white secondary-font">{dict.integration.contactTitle}</h1>
 
 						<a href="mailto:contato@genquest.com.br" className="text-xl">

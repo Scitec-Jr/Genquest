@@ -1,10 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function Footer({ dict }: any) {
 	return (
-		<footer className="relative py-4 px-4 md:px-8 lg:px-16 bg-(--main-color) text-(--accent-color) text-sm z-20">
+		<footer id="footer" className="relative py-4 px-4 md:px-8 lg:px-16 bg-(--main-color) text-(--accent-color) text-sm z-20">
 			<div className="flex flex-col-reverse sm:flex-row items-center justify-between gap-4 max-w-360 mx-auto">
 				<div className="flex flex-col items-center">
 					<Image src="/assets/global/logo2.png" alt="Genquest" width={150} height={150} />
@@ -21,7 +20,7 @@ export default function Footer({ dict }: any) {
                             <Image src="/assets/icons/mail.png" alt="Email" width={16} height={16} className="inline-block mr-1" />
                             contato@genquest.com.br
                         </a>
-						<a href="tel:+5511963767888">
+						<a href="https://wa.me/5511963767888" target="_blank" rel="noopener noreferrer">
                             <Image src="/assets/icons/whatsapp.png" alt="Phone" width={16} height={16} className="inline-block mr-1" />
                             +55 (11) 96376-7888
                         </a>
@@ -29,8 +28,8 @@ export default function Footer({ dict }: any) {
 
 					<div className="flex flex-col gap-2">
 						<h2 className="font-bold">{dict.politcs}</h2>
-						<Link href="/politica-de-privacidade">{dict.privacyPolicy}</Link>
-						<a href="">{dict.termsOfUse}</a>
+						<a href="/files/politica-privacidade-genquest.pdf">{dict.privacyPolicy}</a>
+						<a href="/files/termos-de-uso-genquest.pdf">{dict.termsOfUse}</a>
 						<a href="">{dict.legalNotice}</a>
 					</div>
 

@@ -9,7 +9,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 
 	return (
 		<main>
-			<section className="relative py-8 px-4 md:px-8 bg-white z-20">
+			<section className="relative py-8 px-4 md:px-8 lg:px-16 bg-white z-20">
 				<div className="max-w-360 mx-auto">
 					<h1 className="mb-8 text-6xl secondary-font text-(--accent-color) text-center">{dict.aboutUs.title}</h1>
 
@@ -29,10 +29,10 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 				</div>
 			</section>
 
-			<section className="relative py-8 px-4 md:px-8 bg-(--main-color) z-20">
+			<section className="relative py-8 px-4 md:px-8 lg:px-16 bg-(--main-color) z-20">
 				<div className="flex flex-col md:flex-row">
-					<div className="flex items-center flex-1 w-full p-4">
-                        <h2 className="mb-4 text-4xl secondary-font text-(--accent-color)">{dict.aboutUsPage.excellenceTitle}</h2>
+					<div className="flex items-center gap-4 flex-1 w-full p-4">
+                        <h2 className="flex-1 mb-4 text-4xl secondary-font text-(--accent-color)">{dict.aboutUsPage.excellenceTitle}</h2>
 
                         <div className="flex-1 w-full overflow-hidden">
                             <Carousel showDots={false}>
@@ -40,7 +40,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
                                     <div className="p-8 bg-white rounded-4xl text-black">
                                         <p>
                                             <span className="text-xl text-(--accent-color) font-medium">{dict.aboutUsPage.excellencePoint1}</span>
-                                            <b>Garantir</b> {dict.aboutUsPage.excellenceText1}
+                                            <b>{dict.aboutUsPage.excellenceBold1}</b> {dict.aboutUsPage.excellenceText1}
                                         </p>
                                     </div>
                                 </div>
@@ -49,7 +49,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
                                     <div className="p-8 bg-white rounded-4xl text-black">
                                         <p>
                                             <span className="text-xl text-(--accent-color) font-medium">{dict.aboutUsPage.excellencePoint2}</span>
-                                            <b>Assegurar</b> {dict.aboutUsPage.excellenceText2}
+                                            <b>{dict.aboutUsPage.excellenceBold2}</b> {dict.aboutUsPage.excellenceText2}
                                         </p>
                                     </div>
                                 </div>
@@ -58,7 +58,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
                                     <div className="p-8 bg-white rounded-4xl text-black">
                                         <p>
                                             <span className="text-xl text-(--accent-color) font-medium">{dict.aboutUsPage.excellencePoint3}</span>
-                                            <b>Priorizar</b> {dict.aboutUsPage.excellenceText3}
+                                            <b>{dict.aboutUsPage.excellenceBold3}</b> {dict.aboutUsPage.excellenceText3}
                                         </p>
                                     </div>
                                 </div>
@@ -67,7 +67,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
                                     <div className="p-8 bg-white rounded-4xl text-black">
                                         <p>
                                             <span className="text-xl text-(--accent-color) font-medium">{dict.aboutUsPage.excellencePoint4}</span>
-                                            <b>Promover</b> {dict.aboutUsPage.excellenceText4}
+                                            <b>{dict.aboutUsPage.excellenceBold4}</b> {dict.aboutUsPage.excellenceText4}
                                         </p>
                                     </div>
                                 </div>
@@ -76,7 +76,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
                                     <div className="p-8 bg-white rounded-4xl text-black">
                                         <p>
                                             <span className="text-xl text-(--accent-color) font-medium">{dict.aboutUsPage.excellencePoint5}</span>
-                                            <b>Manter</b> {dict.aboutUsPage.excellenceText5}
+                                            <b>{dict.aboutUsPage.excellenceBold5}</b> {dict.aboutUsPage.excellenceText5}
                                         </p>
                                     </div>
                                 </div>
@@ -85,7 +85,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
                                     <div className="p-8 bg-white rounded-4xl text-black">
                                         <p>
                                             <span className="text-xl text-(--accent-color) font-medium">{dict.aboutUsPage.excellencePoint6}</span>
-                                            <b>Implementar</b> {dict.aboutUsPage.excellenceText6}
+                                            <b>{dict.aboutUsPage.excellenceBold6}</b> {dict.aboutUsPage.excellenceText6}
                                         </p>
                                     </div>
                                 </div>
@@ -94,7 +94,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
                                     <div className="p-8 bg-white rounded-4xl text-black">
                                         <p>
                                             <span className="text-xl text-(--accent-color) font-medium">{dict.aboutUsPage.excellencePoint7}</span>
-                                            <b>Comprometer-se</b> {dict.aboutUsPage.excellenceText7}
+                                            <b>{dict.aboutUsPage.excellenceBold7}</b> {dict.aboutUsPage.excellenceText7}
                                         </p>
                                     </div>
                                 </div>
@@ -110,7 +110,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 						<Image src="/assets/images/heroAbout.png" alt="Genquest" width={700} height={400} className="w-full h-full max-h-100" />
 					</div>
 
-					<div className="relative flex flex-col justify-center flex-1 p-4 shadow-[4px_4px_15px_20px_var(--accent-color)] text-right z-10">
+					<div className="relative flex flex-col justify-center flex-1 p-4 md:pe-8 lg:pe-16 shadow-[4px_4px_15px_20px_var(--accent-color)] text-right z-10">
 					<h2 className="mb-4 text-4xl secondary-font text-(--main-color)">{dict.aboutUsPage.iconTitle}</h2>
 
 					<p className="mb-4 text-xl text-white">{dict.aboutUsPage.iconText}</p>

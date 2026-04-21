@@ -9,12 +9,12 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
 	return (
 		<main>
 			<section className="bg-(--dark-color) h-120">
-				<div className="relative h-full">
+				<div className="relative max-w-360 h-full mx-auto">
 					<Image src="/assets/images/heroHome.png" alt="Genquest" width={1400} height={400} className="w-full max-w-180 h-full ms-auto" />
-					<div className="absolute top-1/2 left-8 transform -translate-y-1/2 text-white">
+					<div className="absolute top-1/2 left-8 lg:left-16 transform -translate-y-1/2 text-white">
 						<h1 className="mb-6 text-3xl md:text-4xl secondary-font w-84 md:w-100">{dict.home.slogan}</h1>
 
-						<a href="#" className="px-4 py-1 bg-(--accent-color) rounded-full">
+						<a href="#footer" className="px-4 py-1 bg-(--accent-color) rounded-full">
 							{dict.home.contactButton}
 						</a>
 					</div>
@@ -22,11 +22,11 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
 			</section>
 
 			<section className="relative z-10 pb-16">
-				<div className="max-w-360 mx-auto">
-					<div className="shadow-[4px_4px_15px_20px_white]">
-						<Image src="/assets/icons/arrowDown.png" alt={dict.home.arrowDownAlt} width={44} height={44} className="mb-4 mx-auto" />
-					</div>
+                <div className="shadow-[4px_4px_15px_20px_white]">
+                    <Image src="/assets/icons/arrowDown.png" alt={dict.home.arrowDownAlt} width={44} height={44} className="mb-4 mx-auto" />
+                </div>
 
+				<div className="max-w-360 mx-auto">
 					<div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center px-4 md:px-8 lg:px-16">
 						<div className="flex-2">
                             <h2 className="mb-2 text-(--main-color) secondary-font font-medium text-3xl">{dict.home.whyTitle}</h2>
@@ -44,7 +44,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
 			</section>
 
 			<section className="py-8 px-4 md:px-8 lg:px-16 bg-(--accent-color)">
-				<div className="flex flex-col-reverse md:flex-row gap-4 md:gap-8 items-center px-4 md:px-8 lg:px-16">
+				<div className="flex flex-col-reverse md:flex-row gap-4 md:gap-8 items-center max-w-360 mx-auto">
                     <div className="flex-1 px-4 py-6 bg-white rounded-3xl border">
 						<h2 className="mb-2 text-2xl secondary-font text-center">{dict.home.missionTitle}</h2>
 
@@ -60,7 +60,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
 			</section>
 
             <section className="py-8 px-4 md:px-8 lg:px-16 bg-(--main-color)">
-				<div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center px-4 md:px-8 lg:px-16">
+				<div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center max-w-360 mx-auto">
                     <div className="flex-2 w-full">
 						<h2 className="mb-2 text-(--accent-color) secondary-font font-medium text-3xl text-left">{dict.home.howTitle}</h2>
 
@@ -80,7 +80,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
 			</section>
 
 			<section className="py-8 px-4 md:px-8 lg:px-16">
-				<div>
+				<div className="max-w-360 mx-auto">
                     <h2 className="mb-16 text-3xl secondary-font font-medium text-(--accent-color) text-center uppercase">{dict.home.leadershipTitle}</h2>
 
                     <div className="flex flex-col md:flex-row gap-16 md:gap-8 items-center justify-center mb-4">
