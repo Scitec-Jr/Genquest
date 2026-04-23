@@ -2,6 +2,7 @@ import { getDictionary } from "@/i18n/getDictionary";
 import { locales, defaultLocale, type Locale } from "@/i18n/config";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import CookieConsent from "@/components/CookieConsent";
 
 function isValidLocale(locale: string): locale is Locale {
   return locales.includes(locale as Locale);
@@ -27,6 +28,7 @@ export default async function LocaleLayout({
       <Header locale={locale} dict={dict.header} />
       {children}
       <Footer dict={dict.footer} />
+      <CookieConsent locale={locale} dict={dict.cookieConsent} />
     </>
   );
 }

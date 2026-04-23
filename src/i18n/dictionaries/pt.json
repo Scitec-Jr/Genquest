@@ -226,5 +226,12 @@
         "sense5Item3": "Não perde de vista o paciente no centro",
         "sense5Text2": "O dente de leão é a metáfora visual da missão da Genquest:",
         "sense5Text3": "Humanizar a jornada do acesso à inovação em saúde, espalhando esperança onde antes havia silêncio."
+    },
+    "cookieConsent": {
+        "text": "Na Genquest, utilizamos cookies para garantir o funcionamento adequado do site, entender como ele é utilizado e aprimorar sua experiência. Você pode aceitar todos os cookies ou personalizar suas preferências a qualquer momento.",
+        "text2": "Para mais detalhes, consulte nossa ",
+        "linkText": "Política de Privacidade",
+        "acceptButton": "Aceitar Todos",
+        "declineButton": "Rejeitar Não Essenciais"
     }
 }

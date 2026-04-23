@@ -87,19 +87,21 @@ export default async function Portfolio({ params }: { params: Promise<{ locale: 
 			</section>
 
 			<section className="relative py-8 px-4 md:px-8 lg:px-16 bg-white z-20">
-			<h2 className="mb-4 text-4xl secondary-font text-(--accent-color) text-center">{dict.services.researchTitle}</h2>
+			    <div className="max-w-360 mx-auto">
+                    <h2 className="mb-4 text-4xl secondary-font text-(--accent-color) text-center">{dict.services.researchTitle}</h2>
 
-                <Image src="/assets/images/qrcode.png" alt={dict.services.researchAlt} width={200} height={200} className="p-4 float-left" />
+                    <Image src="/assets/images/qrcode.png" alt={dict.services.researchAlt} width={200} height={200} className="p-4 float-left" />
 
-                <p>{dict.services.researchText1}</p>
-                <br />
-                <p>{dict.services.researchText2}</p>
-                <br />
-                <p>{dict.services.researchText3}</p>
-                <br />
-                <p>{dict.services.researchLink}</p>
-                <br />
-                <p>{dict.services.researchText4}</p>
+                    <p>{dict.services.researchText1}</p>
+                    <br />
+                    <p>{dict.services.researchText2}</p>
+                    <br />
+                    <p>{dict.services.researchText3}</p>
+                    <br />
+                    <p>{dict.services.researchLink}</p>
+                    <br />
+                    <p>{dict.services.researchText4}</p>
+                </div>
             </section>
 
             <section className="bg-(--accent-color)">

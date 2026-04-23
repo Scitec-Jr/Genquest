@@ -229,5 +229,12 @@
         "sense5Item3": "Does not lose sight of the patient at the center",
         "sense5Text2": "The dandelion is the visual metaphor for Genquest's mission:",
         "sense5Text3": "Humanize the journey of access to innovation in health, spreading hope where there was once silence."
+    },
+    "cookieConsent": {
+        "text": "At Genquest, we use cookies to ensure the proper functioning of the site, understand how it is used, and improve your experience. You can accept all cookies or customize your preferences at any time.",
+        "text2": "For more details, please consult our ",
+        "linkText": "Privacy Policy",
+        "acceptButton": "Accept All",
+        "declineButton": "Decline Non-Essential"
     }
 }

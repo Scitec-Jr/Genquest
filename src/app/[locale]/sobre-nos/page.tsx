@@ -119,7 +119,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
 			</section>
 
 			<section className="relative px-4 md:px-8 lg:px-16 py-8 bg-white z-20">
-				<div className="text-xl">
+				<div className="max-w-360 mx-auto text-xl">
                     <h2 className="mb-4 text-3xl secondary-font text-(--accent-color) text-center">{dict.aboutUsPage.hope1Title}</h2>
 
                     <p>{dict.aboutUsPage.hope1Text1}</p>
@@ -131,7 +131,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
             </section>
 
 			<section className="relative px-4 md:px-8 lg:px-16 py-8 bg-(--main-color) z-20">
-				<div className="text-xl text-white">
+				<div className="max-w-360 mx-auto text-xl text-white">
                     <h2 className="mb-4 text-3xl secondary-font text-(--accent-color) text-center">{dict.aboutUsPage.seeds2Title}</h2>
 
                     <p>{dict.aboutUsPage.seeds2Text1}</p>
@@ -148,7 +148,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
             </section>
 
 			<section className="relative px-4 md:px-8 lg:px-16 py-8 bg-white z-20">
-				<div className="text-xl">
+				<div className="max-w-360 mx-auto text-xl">
                     <h2 className="mb-4 text-3xl secondary-font text-(--main-color) text-center">{dict.aboutUsPage.movement3Title}</h2>
 
                     <p>{dict.aboutUsPage.movement3Text1}</p>
@@ -165,7 +165,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
             </section>
 
 			<section className="relative px-4 md:px-8 lg:px-16 py-8 bg-(--accent-color) z-20">
-				<div className="text-xl">
+				<div className="max-w-360 mx-auto text-xl">
                     <h2 className="mb-4 text-3xl secondary-font text-white text-center">{dict.aboutUsPage.knowledge4Title}</h2>
 
                     <p>{dict.aboutUsPage.knowledge4Text1}</p>
@@ -177,7 +177,7 @@ export default async function Activity({ params }: { params: Promise<{ locale: L
             </section>
 
 			<section className="relative px-4 md:px-8 lg:px-16 py-8 bg-white z-20">
-				<div className="text-xl">
+				<div className="max-w-360 mx-auto text-xl">
                     <h2 className="mb-4 text-3xl secondary-font text-(--accent-color) text-center">{dict.aboutUsPage.sense5Title}</h2>
 
                     <p>{dict.aboutUsPage.sense5Text1}</p>

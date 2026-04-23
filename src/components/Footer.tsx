@@ -28,8 +28,8 @@ export default function Footer({ dict }: any) {
 
 					<div className="flex flex-col gap-2">
 						<h2 className="font-bold">{dict.politcs}</h2>
-						<a href="/files/politica-privacidade-genquest.pdf">{dict.privacyPolicy}</a>
-						<a href="/files/termos-de-uso-genquest.pdf">{dict.termsOfUse}</a>
+						<a href="/files/politica-privacidade-genquest.pdf" target="_blank">{dict.privacyPolicy}</a>
+						<a href="/files/termos-de-uso-genquest.pdf" target="_blank">{dict.termsOfUse}</a>
 						<a href="">{dict.legalNotice}</a>
 					</div>
 

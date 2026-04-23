@@ -1,19 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { usePathname } from "next/navigation";
 import LocalizedLink from "@/components/LocalizedLink";
 import Image from "next/image";
-import Dropdown from "./Dropdown";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function Header({ locale, dict }: any) {
 	const [open, setOpen] = useState(false);
-
-	const pathname = usePathname();
-
-	const servicesActive = pathname.startsWith(`/${locale}/portfolio-de-solucoes`) || pathname.startsWith(`/${locale}/areas-de-atuacao`);
-	const infoActive = pathname.startsWith(`/${locale}/sobre-nos`) || pathname.startsWith(`/${locale}/artigos-e-noticias`) || pathname.startsWith(`/${locale}/para-pacientes-e-familias`);
 
 	return (
 		<header className="relative py-2 px-4 md:px-8 lg:px-16 bg-(--main-color) text-(--secondary-accent-color) text-sm z-50">
